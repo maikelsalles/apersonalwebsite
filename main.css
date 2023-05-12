@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0
+}
+
+html {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background:#000 url(assets/img/background-night.jpg);
+    background-size: auto 160%;
+    background-repeat: no-repeat;
+    font-family: "Montserrat";
+    color: #fff;
+    font-size: 1em;
+    overflow: auto;
+}
+
+a {
+    transition: .3s ease;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    text-shadow: 1px 1px 0 #000;
+}
+.wrapper {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0 32px;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+header img {
+    width: 80px;
+}
+
+nav {
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+nav a {
+    padding: 8px 16px 4px;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:after{
+    content: " ";
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease;
+}
+
+nav a:hover:after{
+    opacity: 1;
+    width: 100%;
+    background-color: #7CD6FF;
+}
+
+nav a:focus-visible:after{
+    opacity: 1;
+    width: 100%;
+    background-color: #7CD6FF;
+}
+
+main {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+
+}
+
+footer {
+    padding: 32px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+footer a{
+    color: #fff;
+    display: inline-block;
+}
+
+.button {
+    background-color: rgba(0,0,0,0.7);
+    border: 3px solid #039CE3;
+    padding: 16px 32px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1em;
+    margin: auto;
+}
+
+.button:hover{
+    border-color: #7CD6FF;
+    background-color: #000;
+}
+
+.icon-linkedIn:before{
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    display: inline-block;
+    content: " ";
+    background-size: cover;
+    background-image: url(assets/img/linkedIn.svg);
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+    header {
+        flex-direction: row;
+    }
+    main {
+        text-align: left;
+    }
+    main .button{
+        margin-right: 0;
+    }
+    footer {
+        justify-content: start;
+    }
+}
