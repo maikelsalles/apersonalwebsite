@@ -1,8 +1,8 @@
 import './globals.scss'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta charSet='utf-8'/>
-      <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+      <meta httpEquiv='X-UA-Compatible' content='IE=edge'/>
       <title>Maikel Salles - UX UI Designer | Front End Developer | Accessibility Specialist</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'/>
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <header className="wrapper">
           <Image
             src="/img/maikel-salles-logo.svg"
