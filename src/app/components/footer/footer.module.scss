@@ -1,0 +1,27 @@
+.footer {
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    &:before {
+        width: 100vw;
+        height: 15vh;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        content: " ";
+        background: var(--linear-gradient);
+    }
+    a {
+        color: #fff;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        justify-content: start;
+    }
+}
