@@ -14,7 +14,7 @@ const navlinks = [
     { href: "/about", label: "About" },
     { href: "https://www.linkedin.com/in/maikelsalles/", title: "View Maikel Salles Resume on LinedIn", label: "Resume", target: "_blank" },
     { href: "https://www.behance.net/maikelsalles", label: "Portfolio", target: "_blank" },
-    { href: "https://www.linkedin.com/in/maikelsalles/overlay/contact-info/", label: "Contact", target: "_blank"}
+    { href: "/contact", label: "Contact"}
   ]
 
 export default function Header() {

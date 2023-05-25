@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Metadata } from 'next'
 import styles from './about.module.scss'
 import Image from 'next/image'
 
-export const metadata = {
-  title: 'Maikel Salles - UX UI Designer | Front End Developer | Accessibility Specialist',
-  description: 'Personal website',
+export const metadata: Metadata = {
+  title: 'About Maikel Salles',
+  description: 'Read about my career and story.',
 }
-
 
 export default function About() {
   return (

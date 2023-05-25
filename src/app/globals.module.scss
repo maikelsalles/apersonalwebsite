@@ -1,6 +1,15 @@
+@import "mixins";
+
 .wrapper {
   padding-right: 2rem !important;
   padding-left: 2rem !important;
+}
+
+.w100 {
+  width: 100%;
+}
+.w50 {
+  width: 50%;
 }
 
 .align-right {
@@ -30,7 +39,7 @@
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@include for-tablet-landscape-up {
   .align-md-right {
     margin-right: 0;
     margin-left: auto;
