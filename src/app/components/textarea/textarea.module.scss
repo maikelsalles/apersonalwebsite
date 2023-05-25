@@ -1,0 +1,15 @@
+.textareaContainer {
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+    textarea {
+        border-radius: 0 var(--border-radius-small) var(--border-radius-small) var(--border-radius-small);
+        border: 1px solid var(--foreground-alpha-70);
+        background-color: transparent;
+        font-size: 1em;
+        padding: 0.5em 1em;
+        height: 5rem;
+    }
+}

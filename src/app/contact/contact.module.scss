@@ -1,0 +1,49 @@
+@import "../mixins";
+
+.contactContainer {
+    display: flex;
+    gap: 2em;
+    flex: 0 70% 30%;
+    align-items: center;
+    flex-direction: column;
+    section {
+        @extend .filledBox;
+        padding: 2em;
+    }
+    form {
+        display: flex;
+        width: 100%;
+        gap: 1em;
+        flex-wrap: wrap;
+        & > div[class*="w50"]{
+            flex: 0 0 1;
+            width: 100%;
+        }
+        label{
+            text-align: left;
+        }
+    }
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+@include for-tablet-landscape-up {
+    .contactContainer {
+        flex-direction: row;
+        section {
+            padding: 2rem 4rem;
+        }
+        form {
+            & > div[class*="w50"]{
+                flex: 0 0 calc(50% - 1em);
+            }
+        }
+    }
+    .aside {
+        width: 30%;
+        align-items: flex-start;
+    }
+}

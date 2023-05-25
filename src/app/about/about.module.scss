@@ -1,6 +1,7 @@
+@import "../mixins";
 
 .article {
-  margin: 2rem 0;
+  margin: 2em 0;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
@@ -14,12 +15,7 @@
     text-align: left;
   }
   &:before {
-    border-radius: var(--border-radius-large);
-    background: var(--background-alpha-70);
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
+    @extend .filledBox;
     position: absolute;
     z-index: -1;
     content: " ";
@@ -37,8 +33,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include for-tablet-landscape-up {
   .article {
+    margin-top: 0;
     flex-direction: row;
     &:before {
       width: 80%;
@@ -68,16 +65,6 @@
 }
 
 @media (prefers-reduced-motion) {
-
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
 
 }
 
