@@ -10,3 +10,35 @@
     @extend .icon;
     background-image: url(/img/linkedIn.svg);
 }
+.behance:before {
+    @extend .icon;
+    background-image: url(/img/behance.svg);
+}
+.instagram:before {
+    @extend .icon;
+    background-image: url(/img/instagram.svg);
+}
+.phone:before {
+    @extend .icon;
+    background-image: url(/img/phone.svg);
+}
+.email:before {
+    @extend .icon;
+    background-image: url(/img/envelope.svg);
+}
+.bars:before {
+    @extend .icon;
+    background-image: url(/img/bars.svg);
+}
+.info:before {
+    @extend .icon;
+    background-image: url(/img/info.svg);
+}
+.arrowRight:before {
+    @extend .icon;
+    background-image: url(/img/arrow-right.svg);
+}
+.arrowLeft:before {
+    @extend .icon;
+    background-image: url(/img/arrow-left.svg);
+}

@@ -33,7 +33,7 @@ export default function Button({ type, href='', customClass, title, target, labe
   }
   if (typeof href === 'string' && (href.startsWith('http') || href.startsWith('https'))) {
     return (
-      <a
+      <Link
         href={href}
         target={target}
         title={title}
@@ -46,24 +46,24 @@ export default function Button({ type, href='', customClass, title, target, labe
         `}
       >
         {label}
-      </a>
+      </Link>
     );
   }
 
   return (
-    <Link href={href} passHref>
-      <a
-        title={title}
-        target={target}
-        className={`
-          ${type === "nude" ? `${styles.nude} ${styles.button}` : styles.button}          
-          ${type === "link" ? `${styles.link} ${styles.button}` : styles.button}
-          ${customClassValue}
-          ${iconValue}
-        `}
-      >
-        {label}
-      </a>
+    <Link
+      href={href}
+      passHref
+      title={title}
+      target={target}
+      className={`
+        ${type === "nude" ? `${styles.nude} ${styles.button}` : styles.button}          
+        ${type === "link" ? `${styles.link} ${styles.button}` : styles.button}
+        ${customClassValue}
+        ${iconValue}
+      `}
+    >
+      {label}
     </Link>
   );
 }
