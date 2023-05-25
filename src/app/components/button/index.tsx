@@ -11,9 +11,10 @@ type ButtonProps = {
   type?: string;
   icon?: string;
   target?: string;
+  disabled?: boolean;
 };
 
-export default function Button({ type, href='', customClass, title, target, label, icon }: ButtonProps) {
+export default function Button({ type, href='', customClass, title, target, label, disabled, icon }: ButtonProps) {
   const customClassValue = customClass ? globals[customClass] : '';
   const iconValue = icon ? icons[icon] : '';
 
@@ -21,6 +22,7 @@ export default function Button({ type, href='', customClass, title, target, labe
     return (
       <button
         type="submit"
+        disabled={disabled}
         className={`
           ${styles.button}
           ${customClassValue}

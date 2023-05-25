@@ -20,8 +20,9 @@
         padding: .5rem 1rem .25rem;
         background-color: transparent;
         position: relative;
+        font-weight: 700;
         text-decoration: none;
-        font-size: var(--font-size-4);
+        font-size: var(--font-size-5);
         &:after {
             content: " ";
             position: absolute;

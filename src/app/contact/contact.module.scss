@@ -23,6 +23,15 @@
             text-align: left;
         }
     }
+    .buttomContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .feedbackMessage {
+            color: var(--primary-regular);    
+        }
+    }
 }
 .aside {
     display: flex;

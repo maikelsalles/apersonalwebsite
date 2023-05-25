@@ -4,7 +4,7 @@ import { Montserrat } from 'next/font/google'
 import Header from '@/app/components/header'
 import Footer from './components/footer'
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+const webfont = Montserrat({ subsets: ['latin'], weight: ['400','700'] })
 
 export const metadata = {
   title: '%s',
@@ -22,7 +22,7 @@ export default function RootLayout({
       <meta httpEquiv='X-UA-Compatible' content='IE=edge'/>
       <meta name='viewport' content='width=device-width, initial-scale=1'/>
       <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-      <body className={montserrat.className}>
+      <body className={webfont.className}>
         <Header/>
         <main className={globals.wrapper}>
           {children}
