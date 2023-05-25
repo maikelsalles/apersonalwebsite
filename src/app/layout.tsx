@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import './globals.scss'
 import globals from './globals.module.scss'
 import { Montserrat } from 'next/font/google'
@@ -6,9 +7,9 @@ import Footer from './components/footer'
 
 const webfont = Montserrat({ subsets: ['latin'], weight: ['400','700'] })
 
-export const metadata = {
-  title: '%s',
-  description: '%s',
+export const metadata: Metadata = {
+  title: 'Maikel Salles',
+  description: 'Personal Website',
 }
 
 export default function RootLayout({
