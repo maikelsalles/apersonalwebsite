@@ -7,21 +7,20 @@ export const metadata: Metadata = {
     description: "Read about my archivements over 10 years of experience."
 }
 
-export default function resume() {
+export default async function Resume() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const posts = await response.json()
+
     return (
         <article className={styles.resumeContainer}>
             <div className={styles.sidebar}>
                 <h1>Resume</h1>
                 <ul>
-                    <li>
-                        <Link href="/resume/experience">experience</Link>
-                    </li>
-                    <li>
-                        <Link href="/resume/skills">skills</Link>
-                    </li>
-                    <li>
-                        <Link href="/resume/education">Education</Link>
-                    </li>
+                    {posts.map((item) => (
+                        <li key={item.id}>
+                            <Link href={`/resume/${item.id}`}>{item.title}</Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <section className={styles.textContent}>
