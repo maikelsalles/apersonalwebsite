@@ -6,7 +6,7 @@ import ContactForm from '../components/forms/contact-form';
 
 export const metadata: Metadata = {
     title: 'Contact Maikel Salles',
-    description: 'We are just a message away!',
+    description: 'We are just a message away!'
 }
 
 export default function Contact() {

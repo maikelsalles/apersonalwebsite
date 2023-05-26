@@ -12,9 +12,9 @@ import styles from "./header.module.scss"
 
 const navlinks = [
   { href: "/about", label: "About" },
-  { href: "https://www.linkedin.com/in/maikelsalles/", title: "View Maikel Salles Resume on LinedIn", label: "Resume", target: "_blank" },
+  { href: "/resume", label: "Resume" },
   { href: "https://www.behance.net/maikelsalles", label: "Portfolio", target: "_blank" },
-  { href: "/contact", label: "Contact"}
+  { href: "/contact", label: "Contact" }
 ]
 
 export default function Header() {
@@ -37,7 +37,6 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              title={link.title}
               target={link.target}
               className={link.href === path ? styles.active : ''}
             >
