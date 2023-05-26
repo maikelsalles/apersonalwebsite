@@ -54,7 +54,7 @@ export default function ContactForm() {
                     errors={state.errors}
                 />
                 <Input name="phone" type="phone" label="Phone" size={2}/>
-                <ValidationError 
+                <ValidationError
                     prefix="Message"
                     field="message"
                     errors={state.errors}
