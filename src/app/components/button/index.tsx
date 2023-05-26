@@ -12,17 +12,19 @@ type ButtonProps = {
   icon?: string;
   target?: string;
   disabled?: boolean;
+  event?: () => void;
 };
 
-export default function Button({ type, href='', customClass, title, target, label, disabled, icon }: ButtonProps) {
+export default function Button({ type, href='', customClass, title, target, label, disabled, event, icon }: ButtonProps) {
   const customClassValue = customClass ? globals[customClass] : '';
   const iconValue = icon ? icons[icon] : '';
-
-  if (type === 'submit'){
+  const targetValue = target? target : "_self";
+  if (type === 'button'){
     return (
       <button
         type="submit"
         disabled={disabled}
+        onClick={event}
         className={`
           ${styles.button}
           ${customClassValue}
@@ -37,7 +39,7 @@ export default function Button({ type, href='', customClass, title, target, labe
     return (
       <Link
         href={href}
-        target={target}
+        target={targetValue}
         title={title}
         rel="noopener noreferrer"
         className={`
@@ -57,7 +59,7 @@ export default function Button({ type, href='', customClass, title, target, labe
       href={href}
       passHref
       title={title}
-      target={target}
+      target={targetValue}
       className={`
         ${type === "nude" ? `${styles.nude} ${styles.button}` : styles.button}          
         ${type === "link" ? `${styles.link} ${styles.button}` : styles.button}

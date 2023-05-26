@@ -5,10 +5,13 @@ import styles from "./forms.module.scss"
 import Input from "@components/input"
 import Button from "@components/button"
 import Textarea from "@components/textarea"
-import Link from 'next/link';
 
 export default function ContactForm() {
-    const [state, handleSubmit] = useForm("xqkoolek");
+    const [state, handleSubmit, reset] = useForm("xqkoolek");
+    
+    function handleClick(): void {
+        reset()
+    }
 
     if (state.succeeded) {
         return (
@@ -21,7 +24,7 @@ export default function ContactForm() {
                     Cheers,<br/>
                     Maik
                 </p>
-                <Button href="/contact" target="same" label="Send another message"/>
+                <Button event={handleClick} type="button" label="Back"/>
             </div>
         )
     }
@@ -32,7 +35,7 @@ export default function ContactForm() {
                 <b>Wanna get in touch?</b><br/>
                 Awesome! Just fill out the quick form below, and I'll get back to you ASAP.
             </p>
-            <form action="" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <ValidationError 
                     prefix="Name" 
                     field="name"
@@ -52,23 +55,12 @@ export default function ContactForm() {
                 />
                 <Input name="phone" type="phone" label="Phone" size={2}/>
                 <ValidationError 
-                    prefix="Message" 
+                    prefix="Message"
                     field="message"
                     errors={state.errors}
                 />
                 <Textarea name="message" label="Whats up?" size={1} required/>
-                <div className={styles.buttomContainer}>
-                    {state.succeeded?
-                        <span className={styles.feedbackMessage}>
-                            Great!<br/>
-                            Can't wait to hear what you have to say.<br/> I'll make sure to get back to you real soon. Have an amazing day!<br/>
-                            Cheers,<br/>
-                            Maik
-                        </span>
-                        : ''
-                    }
-                    <Button disabled={state.submitting} type="submit" label="Submit" customClass="align-right"/>
-                </div>
+                <Button type="button" label="Send message" customClass="align-right"/>
             </form>
         </>
     )
