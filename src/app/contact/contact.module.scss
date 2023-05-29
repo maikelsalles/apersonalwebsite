@@ -26,9 +26,15 @@
 }
 .aside {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 1em;
     align-items: center;
+    justify-content: center;
+    h2 {
+        width: 100%;
+        justify-content: center;
+    }
 }
 @include for-tablet-landscape-up {
     .contactContainer {
@@ -36,14 +42,24 @@
         section {
             padding: 2rem 4rem;
         }
-        form {
-            & > div[class*="w50"]{
-                flex: 0 0 calc(50% - 1em);
-            }
-        }
     }
     .aside {
         width: 30%;
         align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        h2 {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@include for-desktop-up {
+    .contactContainer {
+        form {
+            & > div[class*="w50"]{
+                flex: 0 0 calc(50% - .5em);
+            }
+        }
     }
 }

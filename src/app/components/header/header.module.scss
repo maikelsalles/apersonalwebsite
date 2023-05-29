@@ -3,9 +3,9 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding: 4rem 0 2rem;
+    padding: 1.5rem 0 1rem;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-between;
     img {
         width: 5rem;
@@ -17,7 +17,7 @@
     gap: 0;
     align-items: center;
     a {
-        padding: .5rem 1rem .25rem;
+        padding: .5rem .5rem .25rem;
         background-color: transparent;
         position: relative;
         font-weight: 700;
@@ -54,5 +54,12 @@
 @include for-tablet-landscape-up {
     .header {
         flex-direction: row;
+        gap: 2rem;
+        padding: 4rem 0 2rem;
+        nav {
+            a {
+                padding: .5rem 1rem .25rem;
+            }
+        }
     }
 }

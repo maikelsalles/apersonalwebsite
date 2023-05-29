@@ -1,8 +1,8 @@
 @import "mixins";
 
 .wrapper {
-  padding-right: 2rem !important;
-  padding-left: 2rem !important;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .w100 {
@@ -37,6 +37,15 @@
   .align-sm-center {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@include for-phone-only {
+
+}
+@include for-tablet-portrait-up {
+  .wrapper {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
   }
 }
 @include for-tablet-landscape-up {

@@ -1,19 +1,20 @@
 import { Metadata } from "next"
-import styles from "./resume.module.scss"
-import Skills from "@components/resume/skills"
+import styles from "../resume.module.scss"
 import ResumeSidebar from "@components/resume/sidebar"
+import CertificationsComponent from "@components/resume/certifications"
 
 export const metadata: Metadata = {
-    title: "Resume - Maikel Salles",
-    description: "Read about my archivements over 10 years of experience."
+    title: "Certifications - Resume - Maikel Salles",
+    description: "Read about my previous experience."
 }
 
-export default function Resume() {
+export default function Certifications() {
+
     return (
         <article className={styles.resumeContainer}>
             <ResumeSidebar />
             <section className={styles.textContent}>
-                <Skills />
+                <CertificationsComponent />
             </section>
         </article>
     )

@@ -1,0 +1,56 @@
+.skillsContainer{
+    ul {
+       display: flex;
+       row-gap: .5em;
+       column-gap: 2em;
+       flex-wrap: wrap;
+       li {
+        width: 50%;
+        flex: 0 0 calc(50% - 1em);
+        padding-bottom: 12px;
+        position: relative;
+        list-style: none;
+        &:after {
+            content: " ";
+            height: 8px;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            position: absolute;
+            border-radius: var(--border-radius-small);
+            background-color: var(--foreground-rgb) !important;
+        }
+        &:before {
+            background-color: var(--foreground-alpha-30);
+            content: " " !important;
+            border-radius: var(--border-radius-small);
+            height: 8px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        &[data-range="30"]:after{
+            width: 30% !important;
+        }
+        &[data-range="40"]:after{
+            width: 40% !important;
+        }
+        &[data-range="50"]:after{
+            width: 50% !important;
+        }
+        &[data-range="70"]:after{
+            width: 70% !important;
+        }
+        &[data-range="80"]:after{
+            width: 80% !important;
+        }
+        &[data-range="90"]:after{
+            width: 90% !important;
+        }
+        &[data-range="100"]:after{
+            width: 100% !important;
+        }
+       }
+    }
+}

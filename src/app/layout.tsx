@@ -6,7 +6,7 @@ import Header from '@/app/components/header'
 import Footer from './components/footer'
 import Head from './head'
 
-const webfont = Montserrat({ subsets: ['latin'], weight: ['400','700'] })
+const webfont = Montserrat({ subsets: ['latin'], weight: ['300','400','700'] })
 
 export const metadata: Metadata = {
   title: 'Maikel Salles',
