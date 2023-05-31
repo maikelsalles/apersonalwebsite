@@ -3,7 +3,8 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 0 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     align-items: center;
     gap: 1rem;
     justify-content: space-between;
@@ -26,7 +27,8 @@
         &:after {
             content: " ";
             position: absolute;
-            height: 1px;
+            height: 2px;
+            border-radius: 4px;
             background-color: #fff;
             opacity: 0;
             width: 0;
@@ -39,7 +41,12 @@
         &.active:after {
             opacity: 1;
             width: 100%;
-            background-color: #7CD6FF;
+        }
+        &:hover:after{
+            background-color: var(--foreground-alpha-30);
+        }
+        &.active:after {
+            background-color: var(--primary-regular);
         }
         &:focus-visible:after {
             opacity: 1;
@@ -55,7 +62,8 @@
     .header {
         flex-direction: row;
         gap: 2rem;
-        padding: 4rem 0 2rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
         nav {
             a {
                 padding: .5rem 1rem .25rem;

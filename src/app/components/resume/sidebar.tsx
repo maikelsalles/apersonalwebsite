@@ -1,8 +1,10 @@
 "use client"
 
-import styles from "../../resume/resume.module.scss"
+import styles from "./sidebar.module.scss"
+
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import Button from "../button"
 
 const sidebarlinks = [
     { href: "/resume", label: "Skills" },

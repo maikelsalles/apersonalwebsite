@@ -1,3 +1,5 @@
+$sizes: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
 .skillsContainer{
     ul {
        display: flex;
@@ -12,13 +14,15 @@
         list-style: none;
         &:after {
             content: " ";
+            will-change: width;
             height: 8px;
             bottom: 0;
             left: 0;
             width: 0;
             position: absolute;
             border-radius: var(--border-radius-small);
-            background-color: var(--foreground-rgb) !important;
+            background-color: var(--foreground-rgb);
+            animation: range-length 1s ease-in;
         }
         &:before {
             background-color: var(--foreground-alpha-30);
@@ -30,27 +34,19 @@
             left: 0;
             width: 100%;
         }
-        &[data-range="30"]:after{
-            width: 30% !important;
-        }
-        &[data-range="40"]:after{
-            width: 40% !important;
-        }
-        &[data-range="50"]:after{
-            width: 50% !important;
-        }
-        &[data-range="70"]:after{
-            width: 70% !important;
-        }
-        &[data-range="80"]:after{
-            width: 80% !important;
-        }
-        &[data-range="90"]:after{
-            width: 90% !important;
-        }
-        &[data-range="100"]:after{
-            width: 100% !important;
+        @each $size in $sizes {
+            &[data-range="#{$size}"]:after {
+                width: $size * 1%;
+            }
         }
        }
+    }
+}
+@keyframes range-length {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: inherit;
     }
 }

@@ -4,14 +4,9 @@ export default function CertificationsComponent() {
         <>
             <h2>Certifications</h2>
             <div>
-                <h3>UI Developer - Head of Design</h3>
-                <small>
-                    <span>Uniritter</span>
-                    <time>October 2021 - Current</time>
-                </small>
                 <ul>
-                    <li>Pós</li>
-                    <li>Diploma</li>
+                    <li>Certified Product Management, PM3 - May 2022</li>
+                    <li>Scrum Foundation Professional Certificate (SFPC) - CertiProf - Jun 2020</li>
                 </ul>
             </div>
         </>

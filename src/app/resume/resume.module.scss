@@ -11,16 +11,24 @@
         padding: var(--section-padding);
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
         gap: .5em;
+        & > div {
+            width: 100%;
+        }
         h2 {
             margin-bottom: .5em;
         }
         small {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: .5em;
             justify-content: space-between;
             font-size: var(--font-size-6);
+            span {
+                font-weight: 700;
+            }
         }
         ul {
             margin: 1em 0 2em;
@@ -30,8 +38,7 @@
             li {
                 list-style: none;
                 display: flex;
-                gap: .5em;
-                padding-left: 0.5em;
+                gap: 1em;
                 margin-bottom: .5em;
                 &:before {
                     content: ".";
@@ -43,63 +50,12 @@
         }
     }
 }
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    align-items: center;
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        column-gap: .5rem;
-        li {
-            a {
-                text-decoration: none;
-                font-size: var(--font-size-4);
-                display: flex;
-                padding: 0.25em;
-                gap: 0;
-                flex-direction: column-reverse;
-                &:before {
-                    width: 100%;
-                    height: 3px;
-                }
-                @extend .titleDecoration;
-                &:not(.active){
-                    &::before {
-                        opacity: 0;
-                    }
-                }
-            }
-        }
-    }
-}
 @include for-tablet-landscape-up {
     .resumeContainer {
         flex-direction: row;
         gap: 2em;
         section {
             padding: var(--section-padding);
-        }
-    }
-    .sidebar {
-        align-items: flex-end;
-        text-align: right;
-        width: 30%;
-        ul {
-            flex-direction: column;
-            li {
-                a {
-                    flex-direction: row-reverse;
-                    gap: inherit;
-                    &:before {
-                        width: inherit;
-                    }
-                }
-            }
         }
     }
 }
