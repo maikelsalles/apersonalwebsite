@@ -1,8 +1,8 @@
 @import "mixins";
 
 .wrapper {
-  padding-right: 2rem !important;
-  padding-left: 2rem !important;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .w100 {
@@ -39,6 +39,15 @@
     margin-right: auto;
   }
 }
+@include for-phone-only {
+
+}
+@include for-tablet-portrait-up {
+  .wrapper {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
 @include for-tablet-landscape-up {
   .align-md-right {
     margin-right: 0;
@@ -52,12 +61,17 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   .wrapper {
-    padding-right: 7.5rem !important;
-    padding-left: 7.5rem !important;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
+}
 
+@include for-desktop-up {
+  .wrapper {
+    padding-right: 7.5rem;
+    padding-left: 7.5rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
