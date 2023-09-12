@@ -46,3 +46,7 @@
     @extend .icon;
     background-image: url(/img/arrow-left.svg);
 }
+.close:before {
+    @extend .icon;
+    background-image: url(/img/close.svg);
+}
