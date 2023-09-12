@@ -18,6 +18,10 @@
     @extend .icon;
     background-image: url(/img/instagram.svg);
 }
+.medium:before {
+    @extend .icon;
+    background-image: url(/img/medium.svg);
+}
 .phone:before {
     @extend .icon;
     background-image: url(/img/phone.svg);
