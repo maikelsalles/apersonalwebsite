@@ -1,0 +1,52 @@
+$sizes: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+.skillsContainer{
+    ul {
+       display: flex;
+       row-gap: .5em;
+       column-gap: 2em;
+       flex-wrap: wrap;
+       li {
+        width: 50%;
+        flex: 0 0 calc(50% - 1em);
+        padding-bottom: 12px;
+        position: relative;
+        list-style: none;
+        &:after {
+            content: " ";
+            will-change: width;
+            height: 8px;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            position: absolute;
+            border-radius: var(--border-radius-small);
+            background-color: var(--foreground-rgb);
+            animation: range-length 1s ease-in;
+        }
+        &:before {
+            background-color: var(--foreground-alpha-30);
+            content: " " !important;
+            border-radius: var(--border-radius-small);
+            height: 8px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        @each $size in $sizes {
+            &[data-range="#{$size}"]:after {
+                width: $size * 1%;
+            }
+        }
+       }
+    }
+}
+@keyframes range-length {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: inherit;
+    }
+}

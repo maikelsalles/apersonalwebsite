@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Metadata } from 'next'
 import styles from './about.module.scss'
 import Image from 'next/image'
 
-export const metadata = {
-  title: 'Maikel Salles - UX UI Designer | Front End Developer | Accessibility Specialist',
-  description: 'Personal website',
+export const metadata: Metadata = {
+  title: 'About Maikel Salles',
+  description: 'Read about my career and story.',
 }
-
 
 export default function About() {
   return (
@@ -25,7 +25,7 @@ export default function About() {
         <p>
         As an accessibility specialist, I'm passionate about creating designs that are accessible to everyone, regardless of their abilities. I understand the importance of inclusive design, and I always work hard to ensure that the company's internal communication and its products are accessible to people with disabilities.
         </p>
-        <h2>Skilled in Professional Level</h2>
+        <h2>Skilled at the Professional Level</h2>
         <p>
           I'm an expert at creating responsive designs for different devices and screen sizes. My skillset includes a deep understanding of HTML 5, CSS 3, and JavaScript. Additionally, I have extensive experience with modern frameworks like Angular, React, VueJs, NextJs, and WordPress, as well as a variety of design software such as Figma, Sketch, Adobe Photoshop, and Adobe Illustrator.
         </p>
