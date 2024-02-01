@@ -17,7 +17,10 @@ type ButtonProps = {
 
 export default function Button({ type, href='', customClass, title, target, label, disabled, event, icon }: ButtonProps) {
   const customClassValue = customClass ? globals[customClass] : '';
-  const iconValue = icon ? icons[icon] : '';
+  const iconValue = icon ? `${icons['icon']} ${icons[icon]}` : '';
+
+  // const iconValue = icon ? `${additionalClass} ${icons[icon]}` : '';
+
   const targetValue = target? target : "_self";
   if (type === 'button'){
     return (

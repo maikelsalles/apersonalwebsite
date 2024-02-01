@@ -209,6 +209,11 @@ main {
 }
 
 
+@media (prefers-color-scheme: light) {
+  p {
+    text-shadow: 0 0 1px;
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
