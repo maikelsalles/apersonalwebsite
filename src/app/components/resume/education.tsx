@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function EducationComponent() {
     return (
-        <>
+        <section>
             <h2>Education</h2>
             <div>
                 <h3>Post Graduation Strategic Design Management Specialization</h3>
@@ -22,6 +22,6 @@ export default function EducationComponent() {
                     <li>Awarded honor for the highest grade in the class.</li>
                 </ul>
             </div>
-        </>
+        </section>
     )
 }
