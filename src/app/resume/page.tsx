@@ -1,7 +1,9 @@
 import { Metadata } from "next"
 import styles from "./resume.module.scss"
-import Skills from "@components/resume/skills"
-import ResumeSidebar from "@components/resume/sidebar"
+import Experience from "@components/resume/experience"
+import Education from "@components/resume/education"
+import Stack from "@components/resume/stack"
+import Languages from "@components/resume/languages"
 
 export const metadata: Metadata = {
     title: "Resume - Maikel Salles",
@@ -11,10 +13,10 @@ export const metadata: Metadata = {
 export default function Resume() {
     return (
         <article className={styles.resumeContainer}>
-            <ResumeSidebar />
-            <section className={styles.textContent}>
-                <Skills />
-            </section>
+            <Experience />
+            <Education />
+            <Stack />
+            <Languages />
         </article>
     )
 }

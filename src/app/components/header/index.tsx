@@ -47,7 +47,7 @@ export default function Header() {
   return (    
     <header className={`${styles.header} ${globals.wrapper} ${!navActive ? "" : styles.collapsed} ${!blackout ? "" : styles.blackOut}`}>
       <button id={styles.toggleNav} onClick={() => setNavActive(!navActive)} aria-label="Toggle Menu" className={`nav__menu-bar`}></button>
-      <Link href="" title="Home page" className={styles.brand}>
+      <Link href="/" title="Home page" className={styles.brand}>
         <picture>
           <source srcSet={DarkLogo.src} media="(prefers-color-scheme: dark)" />
           <Image
