@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function CertificationsComponent() {
     return (
-        <>
+        <section>
             <h2>Certifications</h2>
             <div>
                 <ul>
@@ -9,6 +9,6 @@ export default function CertificationsComponent() {
                     <li>Scrum Foundation Professional Certificate (SFPC) - CertiProf - Jun 2020</li>
                 </ul>
             </div>
-        </>
+        </section>
     )
 }
