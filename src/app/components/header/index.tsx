@@ -34,7 +34,7 @@ export default function Header() {
       setScrollPosition(currentPosition);
       setNavActive(false);
       setNavBlackOut(false);
-      if (currentPosition > 70) {
+      if (currentPosition > 30) {
         setNavBlackOut(true);
       }
     }
@@ -53,8 +53,8 @@ export default function Header() {
           <Image
             src={LightLogo}
             alt="The Maikel Salles logo. It's the initials MS jointed on a white and curved line with a blue dot in the bottom right corner."
-            width={80}
-            height={80}
+            width={32}
+            height={32}
           />
         </picture>
       </Link>
