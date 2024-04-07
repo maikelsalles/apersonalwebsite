@@ -47,13 +47,20 @@
                     font-weight: 700;
                 }
             }
+            &.inline {
+                li {
+                    margin-bottom: 0;
+                    &:before {
+                        margin-bottom: 0;
+                        display: none !important;
+                    }
+                }
+            }
         }
     }
 }
 @include for-tablet-landscape-up {
     .resumeContainer {
-        flex-direction: row;
-        gap: 2em;
         section {
             padding: var(--section-padding);
         }

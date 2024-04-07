@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <section className={styles.featuredSection}>
-      <h1>UX UI Designer | Front End Developer<br/> Accessibility Specialist</h1>
+      <h1>Maikel Salles</h1>
       <p>
-          Hello World!<br/>
-          I'm Maikel Salles, a Brazilian UI Front End Developer and UX Designer with 10+ years of experience, passionate about creating accessible user experiences while utilizing cutting-edge technologies. Proficient in building responsive designs using HTML5, CSS3, JavaScript, modern TypeScript frameworks, and many design tools. Strong critical thinking and self-motivated leader, familiar with agile environments and collaborating with multidisciplinary teams under pressure.
+        <strong>UX UI Designer | Front End Developer | Accessibility Specialist</strong><br/>
+        Harmonizing design and code for elegant and inclusive experiences,<br/>
+        where user needs are the cornerstone.
       </p>
       <Button href="https://www.linkedin.com/in/maikelsalles" customClass="align-md-right" icon="linkedIn" target="_blank" label="Follow me on LinkedIn"/>
     </section>

@@ -1,8 +1,19 @@
-import styles from "./skills.module.scss"
+import styles from "./stack.module.scss"
+import parentStyles from "../../resume/resume.module.scss"
 
-const skills = {
-    title: "Technical Skills",
+const stack = {
+    title: "Stack",
     cats: [
+        {
+            title: "Design",
+            items: [
+                { name: "Design System and Guidelines", range: 70 },
+                { name: "Figma", range: 100 },
+                { name: "Adobe Suite", range: 90 },
+                { name: "Sketch", range: 70 },
+                { name: "UI Design", range: 50 },
+            ]
+        },
         {
             title: "Development",
             items: [
@@ -20,34 +31,22 @@ const skills = {
                 { name: "Azure DevOps", range: 50 },
                 { name: "API Integration", range: 60 },
             ]
-        },
-        {
-            title: "Design",
-            items: [
-                { name: "Design System and Guidelines", range: 70 },
-                { name: "Figma", range: 100 },
-                { name: "Adobe Suite", range: 90 },
-                { name: "Sketch", range: 70 },
-                { name: "UI Design", range: 50 },
-            ]
-        }
+        }        
     ]
 };
 
-export default function Skills() {
+export default function Stack() {
     return (
-        <div className={styles.skillsContainer}>
-            <h2>{ skills.title }</h2>
-            {skills.cats.map((cat) => (
+        <section className={styles.skillsContainer}>
+            <h2>{ stack.title }</h2>
+            {stack.cats.map((cat) => (
                 <div key={cat.title}>
                     <h3>{cat.title}</h3>
-                    <ul>
+                    <ul className={parentStyles.inline}>
                         {cat.items.map((item) => (
                             <li key={item.name}
                                 role="contentinfo"
-                                data-range={item.range}
-                                aria-label={`${item.name}: Proficiency level: ${item.range}%`}
-                                title={`Proficiency level: ${item.range}%`}
+                                aria-label={`${item.name}`}
                             >
                                 {item.name}
                             </li>
@@ -55,6 +54,6 @@ export default function Skills() {
                     </ul>
                 </div>
             ))}
-        </div>
+        </section>
     )
 }
