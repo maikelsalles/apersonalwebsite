@@ -14,7 +14,7 @@ export default function Home() {
     <section className={styles.featuredSection}>
       <h1>Maikel Salles</h1>
       <p>
-        <strong>UX UI Designer | Front End Developer | Accessibility Specialist</strong>
+        <strong>UX UI Designer | Front End Developer | Accessibility Specialist</strong><br/>
         Harmonizing design and code for elegant and inclusive experiences,<br/>
         where user needs are the cornerstone.
       </p>
