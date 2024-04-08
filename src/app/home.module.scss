@@ -5,7 +5,25 @@
   flex-direction: column;
   justify-content: center;
   gap: 0;
-  text-align: center;
+}
+.links_container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  a {
+    margin: 0;
+  }
+}
+.frontPic {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  max-height: 75vh;
+  max-width: 45vw;
+  img {
+    width: fill-available;
+    height: fill-available;
+  }
 }
 
 @include for-phone-only {
@@ -16,10 +34,48 @@
   }
 }
 
-@include for-tablet-landscape-up {
+@include for-tablet-portrait-up {
   .featuredSection {
-    text-align: left;
-    flex-direction: column;
+    p {
+      max-width: 50vw;
+    }
+  }
+  .links_container {
+    justify-content: flex-start;
+    gap: 1rem;
+    a {
+      margin-right: auto;
+    }
+  }
+}
+.footer {
+    justify-content: flex-start !important;
+    padding-bottom: 3rem;
+}
+@include for-tablet-landscape-up {
+  .links_container {
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-direction: row;
+    a {
+      margin-right: 0;
+    }
+  }
+  .featuredSection {
+    padding-left: 4rem;
+    p {
+      max-width: 40vw;
+    }
+  }
+  .frontPic {
+    max-height: 75vh;
+    max-width: 60vw;
+  }
+}
+
+@include for-desktop-up {
+  .frontPic {
+    height: 80vh;
   }
 }
 

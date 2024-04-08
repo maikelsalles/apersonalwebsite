@@ -35,6 +35,7 @@
     border: 1px solid var(--foreground-alpha-20);
     box-shadow: 0 0 300px var(--foreground-alpha-10);
     background-color: var(--background-rgb);
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     left: 0;

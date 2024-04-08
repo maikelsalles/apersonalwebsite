@@ -107,6 +107,7 @@
 html{
   height: 100%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -132,7 +133,6 @@ h1 {
   padding: 1rem 0 1rem 0;
   margin: 0;
   font-size: var(--font-size-1);
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -165,20 +165,74 @@ a {
   transition: .3s ease;
   font-weight: 500;
 }
-
-main {
-  text-align: center;
+blockquote {
+  font-weight: 500;
+  border-left: 2px solid var(--primary-regular);
+  padding-left: 1rem;
+  line-height: 1.4em;
+  margin-bottom: 2rem;
 }
-
-@include for-tablet-landscape-up {
+main {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  transition: padding 0.4s ease;
+}
+// react-tel-input cutsom styles
+.highlight {
+  color: var(--background-rgb);
+  background: var(--foreground-rgb);
+}
+.react-tel-input {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  font-family: inherit !important;
+  .flag-dropdown {
+    top: auto !important;
+    height: 38px !important;
+    border: none !important;
+    border-right: 1px solid #cacaca !important;
+    .selected-flag:hover{
+      border-radius: 8px 0 0 8px !important;
+    }
+    .selected-flag:focus,
+    .selected-flag.open {
+      background-color: transparent !important;
+    }
+    &.open {
+      border-radius: 8px 0 0 0 !important;
+    }
+  }
+  .special-label {
+    display: block !important;
+    color: var(--foreground-rgb) !important;
+    background: none !important;
+    position: relative !important;
+    font-size: var(--font-size-p) !important;
+    left: 0 !important;
+    top: auto !important;
+    font-family: inherit !important;
+  }
+  input {
+    border-radius: 8px;
+    border: 1px solid var(--foreground-alpha-70);
+    background-color: transparent;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+}
+@include for-tablet-portrait-up {
   h1 {
     padding: 2rem 0 2rem 0;
     text-align: left;
   }
-
   main {
     text-align: left;
   }
+}
+
+@include for-tablet-landscape-up {
 
 }
 
@@ -195,7 +249,7 @@ main {
 }
 
 @media (prefers-reduced-motion) {
-  a {
-    transform: 0s;
+  * {
+    transition: 0s !important;
   }
 }

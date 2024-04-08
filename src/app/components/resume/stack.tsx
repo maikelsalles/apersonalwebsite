@@ -5,17 +5,19 @@ const stack = {
     title: "Stack",
     cats: [
         {
-            title: "Design",
+            title: "Full-stack Designer",
             items: [
-                { name: "Design System and Guidelines", range: 70 },
-                { name: "Figma", range: 100 },
-                { name: "Adobe Suite", range: 90 },
-                { name: "Sketch", range: 70 },
-                { name: "UI Design", range: 50 },
+                { name: "Design System", range: 70 },
+                { name: "UI UX Design", range: 100 },
+                { name: "Product Design", range: 70 },
+                { name: "Customer Needs Assessment", range: 90 },
+                { name: "Design Thinking", range: 50 },
+                { name: "Figma", range: 50 },
+                { name: "Adobe Suite", range: 50 },
             ]
         },
         {
-            title: "Development",
+            title: "Front-end Developer",
             items: [
                 { name: "Html 5", range: 100 },
                 { name: "CSS3", range: 100 },
@@ -37,7 +39,7 @@ const stack = {
 
 export default function Stack() {
     return (
-        <section className={styles.skillsContainer}>
+        <section className={styles.skillsContainer} id="stack">
             <h2>{ stack.title }</h2>
             {stack.cats.map((cat) => (
                 <div key={cat.title}>

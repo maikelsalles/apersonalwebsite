@@ -20,6 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      
       <Head />
       <body className={webfont.className}>
         <Header/>

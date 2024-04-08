@@ -1,7 +1,7 @@
 
 .button {
     background-color: transparent;
-    border: 3px solid var(--primary-regular);
+    box-shadow: inset 0px 0px 0px 1px var(--primary-regular);
     padding: 1rem 2rem;
     color: var(--primary-regular);
     font-weight: 700;
@@ -13,14 +13,17 @@
     justify-content: center;
     gap: .5rem;
     font-size: 1em;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
     cursor: pointer;
     &:before {
         color: var(--primary-regular);
     }
     &:hover {
-        border-color: var(--primary-light);
-        background-color: #fff;
+        box-shadow: inset 0px 0px 0px 2px var(--primary-light);
+    }
+    &:active {
+        box-shadow: inset 0px 0px 0px 3px var(--primary-dark);
     }
     &.nude {
         background-color: transparent;
@@ -32,12 +35,16 @@
     }
     &.link {
         background-color: transparent;
+        box-shadow: none;
         padding: 0;
         border: none;
         font-weight: 400;
         text-align: unset;
         border-radius: 0;
         color: var(--foreground-rgb);
+        &:before {
+            color: var(--primary-regular);
+        }
         &:hover {
             color: var(--primary-regular);
         }

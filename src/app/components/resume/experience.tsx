@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function ExperienceComponent() {
     return (
-        <section>
+        <section id="experience">
             <h2>Experience</h2>
             <h3>Volunteer Lead Product Designer</h3>
             <small>

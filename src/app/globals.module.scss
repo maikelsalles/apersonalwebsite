@@ -24,8 +24,31 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-@media screen and (max-width: 767px) {
+.phone_only_flex {
+  display: none !important;
+}
+@include for-phone-only {
+  .phone_only_flex {
+    display: flex !important;
+  }
+  .align-po-right {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .align-po-left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .align-po-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@include for-tablet-portrait-up {
+  .wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
   .align-sm-right {
     margin-right: 0;
     margin-left: auto;
@@ -37,15 +60,6 @@
   .align-sm-center {
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@include for-phone-only {
-
-}
-@include for-tablet-portrait-up {
-  .wrapper {
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 }
 @include for-tablet-landscape-up {
@@ -62,8 +76,8 @@
     margin-right: auto;
   }
   .wrapper {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
   }
 }
 
