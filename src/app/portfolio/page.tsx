@@ -23,7 +23,7 @@ export default function Portfolio() {
                 <h2>Design System Engineer</h2>
                 <picture>
                     <source srcSet={img1.src} />
-                    <Image src={img1} alt="" />
+                    <Image src={img1} alt="A set of images of print screens from the project." />
                 </picture>
                 <Button href="portfolio/design-system-engineer" icon="long-arrow-alt-right" label="View details"/>
             </section>
@@ -31,7 +31,7 @@ export default function Portfolio() {
                 <h2>Head of Product Design</h2>
                 <picture>
                     <source srcSet={img2.src} />
-                    <Image src={img2} alt="" />
+                    <Image src={img2} alt="A set of images of print screens from the project." />
                 </picture>
                 <Button href="portfolio/head-of-product-design" icon="long-arrow-alt-right" label="View details"/>
             </section>
@@ -39,7 +39,7 @@ export default function Portfolio() {
                 <h2>Medical Platform</h2>
                 <picture>
                     <source srcSet={img3.src} />
-                    <Image src={img3} alt="" />
+                    <Image src={img3} alt="A set of images of print screens from the project." />
                 </picture>
                 <Button href="portfolio/medical-platform" icon="long-arrow-alt-right" label="View details"/>
             </section>
@@ -47,7 +47,7 @@ export default function Portfolio() {
                 <h2>Personal Website</h2>
                 <picture>
                     <source srcSet={img4.src} />
-                    <Image src={img4} alt="" />
+                    <Image src={img4} alt="A set of images of print screens from the project." />
                 </picture>
                 <Button href="portfolio/personal-website" icon="long-arrow-alt-right" label="View details"/>
             </section>

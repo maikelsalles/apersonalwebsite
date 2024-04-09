@@ -41,7 +41,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img1.src} />
-                    <Image src={img1} alt="" />
+                    <Image src={img1} alt="A screen from Figma Jam with organograms and fluxes." />
                 </picture>
                 <div>
                     <h3>Atomic Design System</h3>
@@ -49,7 +49,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img2.src} />
-                    <Image src={img2} alt="" />
+                    <Image src={img2} alt="A print screen from Figma showing a design system." />
                 </picture>
                 <div>
                     <h3>Prototypes</h3>
@@ -57,7 +57,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img3.src} />
-                    <Image src={img3} alt="" />
+                    <Image src={img3} alt="A print screen from Figma with prototypes." />
                 </picture>
             </section>
             <Button href="/portfolio" icon="long-arrow-alt-left" label="Back to Portfolio"/>

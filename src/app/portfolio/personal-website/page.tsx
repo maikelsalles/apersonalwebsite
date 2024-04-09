@@ -42,18 +42,18 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img1.src} />
-                    <Image src={img1} alt="" />
+                    <Image src={img1} alt="A print screen from GitHub project kanban board within lots of tasks." />
                 </picture>
                 <div className={styles.titleSection}>
                     <div>
                         <h3>Design System, just for fun...</h3>
-                        <p>There's nothing more satisfying than starting a design system from scratch. Even when the project is to small to justify to do it. #MyProjectMyRules</p>
+                        <p>Are there something more satisfying than starting a design system from scratch, even when the project is to small to justify to do it? #MyProjectMyRules</p>
                     </div>
                     <Button type="link" href="https://www.figma.com/file/sO4RwR8UsUSSsYPdBZY8XD/Portfolio-Maikel-Salles-team-library?type=design&node-id=0-1&mode=design" icon="external-link-alt" target="blank" label="Figma Design System"/>
                 </div>
                 <picture>
                     <source srcSet={img2.src} />
-                    <Image src={img2} alt="" />
+                    <Image src={img2} alt="An image from Figma showing a design system with components." />
                 </picture>
                 <div className={styles.titleSection}>
                     <div>
@@ -64,7 +64,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img3.src} />
-                    <Image src={img3} alt="" />
+                    <Image src={img3} alt="Image from Figma showing prototype with screens." />
                 </picture>
                 <div className={styles.titleSection}>
                     <div>
@@ -75,7 +75,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img4.src} />
-                    <Image src={img4} alt="" />
+                    <Image src={img4} alt="The repository on GitHub shows the files from the project." />
                 </picture>
             </section>
             <Button href="/portfolio" icon="long-arrow-alt-left" label="Back to Portfolio"/>

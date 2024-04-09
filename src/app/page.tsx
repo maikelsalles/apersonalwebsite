@@ -28,7 +28,7 @@ export default function Home() {
           <source srcSet={frontPage.src} />
           <Image
             src={frontPage}
-            alt="The Maikel Salles logo. It's the initials MS jointed on a white and curved line with a blue dot in the bottom right corner."
+            alt="This is my photograph. I have a bald head, green eyes, and Caucasian ethnicity. I'm wearing a dark purple shirt paired with a navy blue blazer. I`m with a calm expression."
             width={503}
             height={539}
           />

@@ -43,7 +43,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img1.src} />
-                    <Image src={img1} alt="" />
+                    <Image src={img1} alt="A print screen from Azure DevOps showing a kanban board with tasks." />
                 </picture>
                 <div>
                     <h3>Team work and collaboration</h3>
@@ -55,7 +55,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img2.src} />
-                    <Image src={img2} alt="" />
+                    <Image src={img2} alt="The image is half with Storybook showcasing some components and the other half is the VsCode showing code." />
                 </picture>
             </section>
             <Button href="/portfolio" icon="long-arrow-alt-left" label="Back to Portfolio"/>

@@ -47,7 +47,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img1.src} />
-                    <Image src={img1} alt="" />
+                    <Image src={img1} alt="A print screen from Figma Jam with an organogram showing the process of automated testing." />
                 </picture>
                 <div>
                     <h3>Design System Initiative</h3>
@@ -55,7 +55,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img2.src} />
-                    <Image src={img2} alt="" />
+                    <Image src={img2} alt="A print screen from Figma showing a design system with lots of components." />
                 </picture>
                 <div>
                     <p>
