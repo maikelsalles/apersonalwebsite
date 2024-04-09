@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next"
 import styles from "../portfolio.module.scss"
 import Image from 'next/image'

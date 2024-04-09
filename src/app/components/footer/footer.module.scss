@@ -32,3 +32,10 @@
         padding-bottom: 3rem;
     }
 }
+@media (prefers-color-scheme: light) {
+    .footer{
+        &:before {
+            display: none;
+        }
+    }
+}

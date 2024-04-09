@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next"
 import styles from "../portfolio.module.scss"
 import Image from 'next/image'
@@ -57,7 +58,7 @@ export default function Resume() {
                 </div>
                 <picture>
                     <source srcSet={img3.src} />
-                    <Image src={img3} alt="A print screen from Figma with prototypes." />
+                    <Image src={img3} alt="A print screen from Figma with prototypes.```" />
                 </picture>
             </section>
             <Button href="/portfolio" icon="long-arrow-alt-left" label="Back to Portfolio"/>

@@ -193,9 +193,9 @@ main {
   font-family: inherit !important;
   .flag-dropdown {
     top: auto !important;
-    height: 38px !important;
+    height: 36px !important;
     border: none !important;
-    border-right: 1px solid #cacaca !important;
+    border-right: 1px solid var(--foreground-alpha-70) !important;
     .selected-flag:hover{
       border-radius: 8px 0 0 8px !important;
     }
@@ -209,6 +209,7 @@ main {
   }
   .special-label {
     display: block !important;
+    text-align: left !important;
     color: var(--foreground-rgb) !important;
     background: none !important;
     position: relative !important;
@@ -219,7 +220,7 @@ main {
   }
   input {
     border-radius: 8px;
-    border: 1px solid var(--foreground-alpha-70);
+    border: 1px solid var(--foreground-alpha-70) !important;
     background-color: transparent;
     font-size: 1em;
     padding: 0.5em 1em;
