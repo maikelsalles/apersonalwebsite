@@ -4,3 +4,12 @@
         margin-bottom: 1em;
     }
 }
+.customDropdown {
+    background: var(--background-rgb) !important;
+    color: var(--foreground-rgb) !important;
+    li:hover,
+    .highlight {
+        color: var(--background-rgb) !important;
+        background: var(--foreground-rgb) !important;
+    }
+}

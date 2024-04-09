@@ -1,0 +1,83 @@
+@import "../mixins";
+.portfolioContainer {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    flex-direction: column;
+    section {
+        h2 {
+            width: 100%;
+        }
+        @extend .filledBox;
+        padding: var(--section-padding);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 1em;
+        picture {
+            display: flex;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+.caseContainer {
+    text-align: left;
+    h2 {
+        margin-bottom: 1rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    picture {
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+    }
+    h3 {
+        margin-bottom: 1rem;
+    }
+    .advise {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: var(--font-size-p);
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        margin: 0 0 1rem;
+        border: 1px solid var(--foreground-alpha-10);
+        span {
+            &:before {
+                color: var(--warning);
+            }
+        }
+    }
+}
+.titleSection {
+    display: flex;
+    gap: 0rem;
+    flex-direction: column;
+    padding: 0 0 2rem 0;
+}
+@include for-tablet-landscape-up {
+    .titleSection {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        padding-bottom: 0;
+        & > div {
+            max-width: 700px;
+        }
+    }
+    .portfolioContainer {
+        gap: 2em;
+        section {
+            align-items: flex-end;
+        }
+    }
+}

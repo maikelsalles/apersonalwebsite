@@ -5,7 +5,7 @@ import icons from "../../icons.module.scss"
 
 type ButtonProps = {
   href?: string;
-  customClass?: string;
+  customClass?: string | string[];
   label?: string;
   title?: string;
   type?: string;
@@ -16,10 +16,13 @@ type ButtonProps = {
 };
 
 export default function Button({ type, href='', customClass, title, target, label, disabled, event, icon }: ButtonProps) {
-  const customClassValue = customClass ? globals[customClass] : '';
+  let customClassValue = '';
+  if (typeof customClass === 'string') {
+    customClassValue = globals[customClass] || '';
+  } else if (Array.isArray(customClass)) {
+    customClassValue = customClass.map(className => globals[className] || '').join(' ');
+  }
   const iconValue = icon ? `${icons['icon']} ${icons[icon]}` : '';
-
-  // const iconValue = icon ? `${additionalClass} ${icons[icon]}` : '';
 
   const targetValue = target? target : "_self";
   if (type === 'button'){
