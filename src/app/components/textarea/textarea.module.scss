@@ -3,9 +3,10 @@
         display: flex;
         flex-direction: column;
         gap: .5em;
+        font-size: var(--font-size-p);
     }
     textarea {
-        border-radius: 0 var(--border-radius-small) var(--border-radius-small) var(--border-radius-small);
+        border-radius: 8px;
         border: 1px solid var(--foreground-alpha-70);
         background-color: transparent;
         font-size: 1em;

@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'ms-iconfontset';
-    src:  url('/fonts/ms-iconfontset.eot?sdkgd');
-    src:  url('/fonts/ms-iconfontset.eot?sdkgd#iefix') format('embedded-opentype'),
-        url('/fonts/ms-iconfontset.ttf?sdkgd') format('truetype'),
-        url('/fonts/ms-iconfontset.woff?sdkgd') format('woff'),
-        url('/fonts/ms-iconfontset.svg?sdkgd#ms-iconfontset') format('svg');
+    src:  url('/fonts/ms-iconfontset.eot?pkhkj6');
+    src:  url('/fonts/ms-iconfontset.eot?pkhkj6#iefix') format('embedded-opentype'),
+      url('/fonts/ms-iconfontset.ttf?pkhkj6') format('truetype'),
+      url('/fonts/ms-iconfontset.woff?pkhkj6') format('woff'),
+      url('/fonts/ms-iconfontset.svg?pkhkj6#ms-iconfontset') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
-
-.icon:before {
+  }
+  
+ .icon:before {
     font-family: 'ms-iconfontset' !important;
     speak: never;
     font-style: normal;
@@ -18,58 +18,83 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  
+.long-arrow-alt-left:before {
+  content: "\e914";
 }
-
+.long-arrow-alt-right:before {
+  content: "\e915";
+}
+.external-link-alt:before {
+  content: "\e916";
+}
+.arrow-down:before {
+  content: "\e900";
+}
 .arrow-left:before {
-    content: "\e900";
+  content: "\e901";
 }
 .arrow-right:before {
-    content: "\e901";
+  content: "\e902";
+}
+.arrow-up:before {
+  content: "\e903";
 }
 .bars:before {
-    content: "\e902";
+  content: "\e904";
 }
 .behance:before {
-    content: "\e903";
+  content: "\e905";
 }
 .close:before {
-    content: "\e904";
+  content: "\e906";
+}
+.download:before {
+  content: "\e907";
 }
 .envelope:before {
-    content: "\e905";
+  content: "\e908";
 }
-.Info:before {
-    content: "\e906";
+.heart:before {
+  content: "\e909";
+}
+.info:before {
+  content: "\e90a";
 }
 .instagram:before {
-    content: "\e907";
+  content: "\e90b";
 }
 .linkedIn:before {
-    content: "\e908";
+  content: "\e90c";
 }
 .maikel-salles-logo-dark .path1:before {
-    content: "\e909";
-    color: rgb(0, 0, 0);
+  content: "\e90d";
+  color: rgb(0, 0, 0);
 }
 .maikel-salles-logo-dark .path2:before {
-    content: "\e90a";
-    margin-left: -1em;
-    color: rgb(3, 156, 227);
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(3, 156, 227);
 }
 .maikel-salles-logo-light .path1:before {
-    content: "\e90b";
-    color: rgb(255, 255, 255);
+  content: "\e90f";
+  color: rgb(255, 255, 255);
 }
 .maikel-salles-logo-light .path2:before {
-    content: "\e90c";
-    margin-left: -1em;
-    color: rgb(3, 156, 227);
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(3, 156, 227);
 }
 .medium:before {
-    content: "\e90d";
+  content: "\e911";
 }
 .phone:before {
-    content: "\e90e";
+  content: "\e912";
+}
+.plane:before {
+  content: "\e913";
 }

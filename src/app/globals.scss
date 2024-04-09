@@ -11,10 +11,13 @@
   --primary-light: rgba(124, 214, 255, 1);
   --primary-regular: rgba(3, 156, 227, 1);
   --white: 255, 255, 255;
+  --warning: #FCAB0E;
+  --sucess: #0EFC7B;
+  --danger: #FC0E0E;
   
-  --background-alpha-30: rgba(var(--white), 0.3);
+  --background-alpha-20: rgba(var(--white), 0.2);
   --background-alpha-70: rgba(var(--white), 0.7);
-  --foreground-alpha-30: rgba(var(--black), 0.3);
+  --foreground-alpha-20: rgba(var(--black), 0.2);
   --foreground-alpha-70: rgba(var(--black), 0.7);
 
   --shadow-large: .25rem .25rem 2rem var(--background-alpha-70);
@@ -24,7 +27,6 @@
   --border-radius-large: 1rem;
   --foreground-rgb: rgba(var(--black),1);
   --background-rgb: rgba(var(--white),1);
-  --bg-image: url("/img/day.jpg");
   --linear-gradient: linear-gradient(
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1)
@@ -45,11 +47,11 @@
   :root {
     --foreground-rgb: rgba(var(--white),1);
     --background-rgb: rgba(var(--black),1);
-    --bg-image: url("/img/night.jpg");
 
-    --background-alpha-30: rgba(var(--black), 0.3);
+    --background-alpha-20: rgba(var(--black), 0.2);
     --background-alpha-70: rgba(var(--black), 0.7);
-    --foreground-alpha-30: rgba(var(--white), 0.3);
+    --foreground-alpha-10: rgba(var(--white), 0.1);
+    --foreground-alpha-20: rgba(var(--white), 0.3);
     --foreground-alpha-70: rgba(var(--white), 0.7);
 
     --linear-gradient: linear-gradient(
@@ -61,11 +63,11 @@
 
 @include for-phone-only {
   body {
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
   :root {
     
-    --border-radius-large: 0;
+    --border-radius-large: 1rem;
 
     --font-size-1: 1.5em;
     --font-size-2: 1.25em;
@@ -108,6 +110,7 @@
 html{
   height: 100%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -117,7 +120,7 @@ body {
 }
 
 body {
-  background-attachment: fixed;
+  background-color: var(--background-rgb);
   font-size: 1em;
   overflow: auto;
   display: flex;
@@ -127,38 +130,12 @@ body {
   color: var(--foreground-rgb);
   font-weight: 400;
   position: relative;
-  &:before {
-    background-repeat: no-repeat;
-    background-color: var(--background-rgb);
-    background-image: var(--bg-image);
-    background-size: cover;
-    animation: zoomInOut 180s infinite;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    content: " ";
-  }
 }
-
-@keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 
 h1 {
   padding: 1rem 0 1rem 0;
   margin: 0;
   font-size: var(--font-size-1);
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -191,20 +168,75 @@ a {
   transition: .3s ease;
   font-weight: 500;
 }
-
-main {
-  text-align: center;
+blockquote {
+  font-weight: 500;
+  border-left: 2px solid var(--primary-regular);
+  padding-left: 1rem;
+  line-height: 1.4em;
+  margin-bottom: 2rem;
 }
-
-@include for-tablet-landscape-up {
+main {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  transition: padding 0.4s ease;
+}
+// react-tel-input cutsom styles
+.highlight {
+  color: var(--background-rgb);
+  background: var(--foreground-rgb);
+}
+.react-tel-input {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  font-family: inherit !important;
+  .flag-dropdown {
+    top: auto !important;
+    height: 36px !important;
+    border: none !important;
+    border-right: 1px solid var(--foreground-alpha-70) !important;
+    .selected-flag:hover{
+      border-radius: 8px 0 0 8px !important;
+    }
+    .selected-flag:focus,
+    .selected-flag.open {
+      background-color: transparent !important;
+    }
+    &.open {
+      border-radius: 8px 0 0 0 !important;
+    }
+  }
+  .special-label {
+    display: block !important;
+    text-align: left !important;
+    color: var(--foreground-rgb) !important;
+    background: none !important;
+    position: relative !important;
+    font-size: var(--font-size-p) !important;
+    left: 0 !important;
+    top: auto !important;
+    font-family: inherit !important;
+  }
+  input {
+    border-radius: 8px;
+    border: 1px solid var(--foreground-alpha-70) !important;
+    background-color: transparent;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+}
+@include for-tablet-portrait-up {
   h1 {
     padding: 2rem 0 2rem 0;
     text-align: left;
   }
-
   main {
     text-align: left;
   }
+}
+
+@include for-tablet-landscape-up {
 
 }
 
@@ -221,7 +253,7 @@ main {
 }
 
 @media (prefers-reduced-motion) {
-  a {
-    transform: 0s;
+  * {
+    transition: 0s !important;
   }
 }

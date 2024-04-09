@@ -2,10 +2,13 @@
 "use client"
 import { useForm, ValidationError } from '@formspree/react';
 import styles from "./forms.module.scss"
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/plain.css'
+import globals from "../../globals.module.scss";
+import input from "../input/input.module.scss";
 import Input from "@components/input"
 import Button from "@components/button"
 import Textarea from "@components/textarea"
-
 export default function ContactForm() {
     const [state, handleSubmit, reset] = useForm("xqkoolek");
     
@@ -31,10 +34,6 @@ export default function ContactForm() {
     return (
         <>
             <h1>Contact me</h1>
-            <p>
-                <b>Wanna get in touch?</b><br/>
-                Awesome! Just fill out the quick form below, and I'll get back to you ASAP.
-            </p>
             <form onSubmit={handleSubmit}>
                 <ValidationError 
                     prefix="Name" 
@@ -43,24 +42,49 @@ export default function ContactForm() {
                 />
                 <Input name="name" type="text" label="Name" size={1} required/>
                 <ValidationError 
-                    prefix="Email" 
+                    prefix="Name" 
                     field="email"
                     errors={state.errors}
                 />
                 <Input name="email" type="email" label="Email" size={2} required/>
                 <ValidationError 
+                    prefix="Email" 
+                    field="email"
+                    errors={state.errors}
+                />
+                <div className={`${input.inputContainer} ${globals.w50}`}>
+                <PhoneInput
+                    country={"ca"}
+                    inputProps={{
+                        name: "phone",
+                        required: false,
+                        autoFocus: false
+                    }}
+                    inputStyle={{
+                        background: "transparent",
+                        border: "1px solid var(--foreground-alpha-70);",
+                        borderRadius: "8px",
+                        width: "100%",
+                        paddingTop: "0.5em",
+                        paddingBottom: "0.5em",
+                        lineHeight: "1.30rem",
+                        height: "auto"
+                    }}
+                    dropdownClass={styles.customDropdown}
+                />
+                </div>
+                <ValidationError 
                     prefix="Phone" 
                     field="phone"
                     errors={state.errors}
                 />
-                <Input name="phone" type="phone" label="Phone" size={2}/>
                 <ValidationError
                     prefix="Message"
                     field="message"
                     errors={state.errors}
                 />
-                <Textarea name="message" label="Whats up?" size={1} required/>
-                <Button type="button" label="Send message" customClass="align-right"/>
+                <Textarea name="message" label="Leave a message" size={1} required/>
+                <Button type="button" label="Send message" icon="plane" customClass="align-right"/>
             </form>
         </>
     )
