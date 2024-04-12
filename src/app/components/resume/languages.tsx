@@ -6,7 +6,7 @@ export default function LanguagesComponent() {
         <section id="languages">
             <h2>Languages</h2>
             <div>
-                <ul>
+                <ul className={parentStyles.inline}>
                     <li>Portuguese: Native</li>
                     <li>English: Fluent</li>
                     <li>Spanish: Intermediate</li>
