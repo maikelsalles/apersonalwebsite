@@ -21,7 +21,6 @@ export default function Home() {
         where user needs are the cornerstone.
       </p>
       <div className={styles.links_container}>
-        <Button href="https://drive.usercontent.google.com/download?id=10zwQm9Rac1g0ZAhBTol2nya6qRJ4HZo7" icon="download" label="Download Resume"/>
         <Button href="/portfolio" icon="heart" label="Favorite Projects"/>
       </div>
       <picture className={styles.frontPic}>

@@ -16,7 +16,6 @@ import styles from "./header.module.scss"
 const navlinks = [
   { href: "/about", label: "About" },
   { href: "/resume", label: "Resume" },
-  { href: "https://medium.com/@MaikelSalles", label: "Medium", target: "_blank" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/contact", label: "Contact" }
 ]
