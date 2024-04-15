@@ -42,9 +42,11 @@ export default function ExperienceComponent() {
                 <time>May 2019 - October 2021</time>
             </small>
             <ul>
-                <li>Provided mentorship and served as a reference for accessibility and best practices in front end development.</li>
-                <li>Assisted the company in successfully avoiding a R$3 million fine, fixing accessibility problems in the main product refactoring legacy (Java, Coldfusion) code to be affordable with WCAG and W3C Guidelines, creating custom components in the process, resulting in 20% acceleration in development time and a 95% improvement in user accessibility.</li>
-                <li>Leaded research of accessibility requirements and created guidelines for the system re-platform project of CodeFusion to Angular, as an accessibility specialist and front-end developer. Avoiding issues and new fines to the company.</li>
+                <li>Implemented WCAG guidelines to improve accessibility on the Sou Log Platform, resulting in a remarkable 90% enhancement. This initiative prevented the company from incurring a significant regulatory fee of 3M.</li>
+                <li>Created accessible and W3C Standard library of components to save time by 60% on front-end development.</li>
+                <li>Developed high-performance, pixel-perfect features in the Angular framework and contributed proactively for an agile environment within multidisciplinary teams.</li>
+                <li>Achieved proficiency in NGXS/NgRx for data and state, RxJS for reactive programming, and modern styling tools like SASS/SCSS, Flexbox, Animations, continuous integration, and automated testing tools.</li>
+                <li>Worked with the latest technologies for optimal quality and standards, on a B2B platform within the financial sector.</li>
             </ul>
             <h3>Lead Product Designer & Front-end Developer</h3>
             <small>
@@ -52,9 +54,9 @@ export default function ExperienceComponent() {
                 <time>October 2018 - April 2019</time>
             </small>
             <ul>
-                <li>Leaded user research, wireframing, prototype, and test analysis by observation measurement data.</li>
-                <li>Enhanced the user experience on Real State Agence by new design screens for web and mobile, decreasing calls and excessive customer contact by 50% with a better UI experience.</li>
-                <li>Created style guides, page templates, icon sets, a CSS framework from scratch, email templates and dashboards with graphs and animations with the VueJs framework.</li>
+                <li>Enhanced the user experience on Real State Agency by crafting intuitive web and mobile screens, resulting in a notable 50% reduction in customer inquiries and interactions. Achieved through the meticulous application of design thinking and agile methodologies.</li>
+                <li>Established foundational elements including style guides, page templates, icon sets, and a custom CSS framework.</li>
+                <li>Developed Institutional website, web platform and Dashboards on Vue.js framework, ensuring seamless implementation of design concepts and accessibility.</li>
             </ul>
             <h3>Multimedia Producer</h3>
             <small>
@@ -62,11 +64,10 @@ export default function ExperienceComponent() {
                 <time>Jun 2016 - May 2019</time>
             </small>
             <ul>
-                <li>Worked on many Front End projects with advanced use of HTML 5, CSS3, JavaScript, and TypeScript modern frameworks such as AngularJS, Angular, React, VueJs, and high performed Static Pages.</li>
-                <li>Delivered 20+ WordPress projects, including UX, UI design and development, and designed about 15 logotypes and brand guidelines.</li>
-                <li>Produced over 200 hours of audio for independent artists and more than 100 hours of video editing.</li>
-                <li>Responsible for designing and developing many landing pages for lead capture and sales funnel purposes with SEO optimization and fast load.</li>
-                <li>Managed and designed social content for small businesses and artists, utilizing expertise as UX Designer, conducting research, creating wireframes, developing prototypes, and analyzing test results to improve user experience and more relevant content.</li>
+                <li>Worked on many Digital products design and developing front-end within HTML 5, CSS3, JavaScript, and TypeScript modern frameworks such as AngularJS, Angular, React, VueJs, and high-performing Static Pages.</li>
+                <li>Delivered more than 20 WordPress projects, focused on user experience, performance and SEO optimization.</li>
+                <li>Worked on brand, rebrand and social media.</li>
+                <li>Produced audio and video for press and independent artists and bands.</li>
             </ul>
             <h3>UX UI Designer and Front-end Developer</h3>
             <small>

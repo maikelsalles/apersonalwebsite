@@ -223,7 +223,8 @@
         &.blackOut {
             background-color: var(--background-rgb);
         }
-        &:before {
+        &:before,
+        &:after{
             display: none;
         }
     }
