@@ -63,7 +63,6 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              target={link.target}
               onClick={closeNav}
               className={link.href === path ? styles.active : ''}
             >
