@@ -22,7 +22,6 @@ export default function Resume() {
             </nav>
             <div className={styles.titleContainer}>
                 <h1>Resume</h1>
-                <Button type="link" href="https://drive.usercontent.google.com/download?id=10zwQm9Rac1g0ZAhBTol2nya6qRJ4HZo7" icon="download" label="Download PDF"/>
             </div>
             <Experience />
             <Education />

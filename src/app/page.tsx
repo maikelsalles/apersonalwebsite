@@ -7,7 +7,7 @@ import Image from 'next/image'
 import frontPage from '@img/maikel-salles.png'
 
 export const metadata: Metadata = {
-  title: 'Maikel Salles - UX UI Designer | Front End Developer | Accessibility Specialist',
+  title: 'Maikel Salles - UX UI Designer | UI Developer | Accessibility Specialist',
   description: 'Hello world! This is my personal website',
 }
 
@@ -16,7 +16,7 @@ export default function Home() {
     <section className={styles.featuredSection}>
       <h1>Maikel Salles</h1>
       <p>
-        <strong>UX UI Designer | Front End Developer | Accessibility Specialist</strong><br/>
+        <strong>UX UI Designer | UI Developer | Accessibility Specialist</strong><br/>
         Harmonizing design and code for elegant and inclusive experiences,
         where user needs are the cornerstone.
       </p>
