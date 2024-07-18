@@ -20,20 +20,20 @@ export default function Portfolio() {
                 <h1>Portfolio</h1>
             </div>
             <section>
-                <h2>Design System Engineer</h2>
+                <h2>Design System</h2>
                 <picture>
                     <source srcSet={img1.src} />
                     <Image src={img1} alt="A set of images of print screens from the project." />
                 </picture>
-                <Button href="portfolio/design-system-engineer" icon="long-arrow-alt-right" label="View details"/>
+                <Button href="portfolio/design-system" icon="long-arrow-alt-right" label="View details"/>
             </section>
             <section>
-                <h2>Head of Product Design</h2>
+                <h2>Product Design</h2>
                 <picture>
                     <source srcSet={img2.src} />
                     <Image src={img2} alt="A set of images of print screens from the project." />
                 </picture>
-                <Button href="portfolio/head-of-product-design" icon="long-arrow-alt-right" label="View details"/>
+                <Button href="portfolio/product-design" icon="long-arrow-alt-right" label="View details"/>
             </section>
             <section>
                 <h2>Medical Platform</h2>

@@ -18,19 +18,15 @@ export default function Resume() {
     return (
         <article className={styles.resumeContainer}>
             <div className={styles.titleContainer}>
-                <h1>Head of Product Design</h1>
+                <h1>Product Design</h1>
             </div>
             <section id="personal-website" className={styles.caseContainer}>
                 <div>
                     <p>
-                        As the Head of Design at DBC Company consulting for Ticket Log by Edenred, I faced the challenge of ensuring a unified and seamless experience across our digital products in terms of design and user experience. I proposed a new design process and initiated a Design System project, which proved to be the most intricate yet time-saving transformation the company has ever undertaken.
+                        As the Product Designer at DBC Company consulting for Ticket Log by Edenred, I faced the challenge of ensuring a unified and seamless experience across our digital products in terms of design and user experience. I proposed a new design process and initiated a Design System project, which proved to be the most intricate yet time-saving transformation the company has ever undertaken.
                     </p>
                     <p>
                         Recognizing the need for leadership to streamline internal processes and reduce excessive revisions in prototype development, so I volunteered to lead the design team. At the time, with only four designers reporting directly to product owners and minimal communication among them, I saw the opportunity to establish clearer channels of communication, standardize processes, and enhance the efficiency and quality of our design outputs.
-                    </p>
-                    <h3>Build a design department from scratch</h3>
-                    <p>
-                        Building a design department from scratch involved assessing organizational needs and objectives, defining roles and responsibilities for over 10 product designers, recruiting talented individuals aligned with company culture, establishing standardized processes and workflows, implementing necessary tools and technologies, fostering collaboration within and across teams, promoting continuous learning and development, and measuring effectiveness through metrics for ongoing improvement.
                     </p>
                     <h3>Team work and collaboration</h3>
                     <p>
