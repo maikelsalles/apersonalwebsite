@@ -15,7 +15,7 @@ export default function About() {
       <div className={styles.textContent}>
         <h1>About me</h1>
         <blockquote>
-          A skilled Designer and Developer with over 10 years of experience in the enterprise industry, I'm a Brazilian living in Calgary AB, since August 2023, and currently seeking new challenging opportunities in the Canadian tech industry.
+          A skilled Designer and Developer with experience in the enterprise industry, I'm a Brazilian living in Calgary AB, since August 2023, and currently seeking new challenging opportunities in the Canadian tech industry.
         </blockquote>
         <p>
           Hy there,

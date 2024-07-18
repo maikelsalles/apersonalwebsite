@@ -18,12 +18,12 @@ export default function Resume() {
     return (
         <article className={styles.resumeContainer}>
             <div className={styles.titleContainer}>
-                <h1>Design System Engineer</h1>
+                <h1>Design System</h1>
             </div>
             <section id="personal-website" className={styles.caseContainer}>
                 <div>
                     <p>
-                        I transitioned from Head of Product Design to fully focus on integrating the design system into the company's daily operations. My goal was to institutionalize its use and collaborate with the software engineering team to optimize performance and utilization. By developing processes and fostering cross-departmental alignment, we aimed to ensure the design system's seamless integration and maximize its benefits across the organization.
+                        I transitioned from Product Designer to fully focus on integrating the design system into the company's daily operations. My goal was to institutionalize its use and collaborate with the software engineering team to optimize performance and utilization. By developing processes and fostering cross-departmental alignment, we aimed to ensure the design system's seamless integration and maximize its benefits across the organization.
                     </p>
                     <p>
                         Recognizing the need for leadership to streamline internal processes and reduce excessive revisions in prototype development, so I volunteered to lead the design team. At the time, with only four designers reporting directly to product owners and minimal communication among them, I saw the opportunity to establish clearer channels of communication, standardize processes, and enhance the efficiency and quality of our design outputs.
