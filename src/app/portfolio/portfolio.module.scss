@@ -76,6 +76,8 @@
     }
     .portfolioContainer {
         gap: 2em;
+        position: relative;
+        z-index: 3;
         section {
             align-items: flex-end;
         }
