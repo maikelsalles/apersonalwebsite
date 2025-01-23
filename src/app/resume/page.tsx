@@ -3,7 +3,6 @@ import styles from "./resume.module.scss"
 import Experience from "@components/resume/experience"
 import Education from "@components/resume/education"
 import Stack from "@components/resume/stack"
-import Languages from "@components/resume/languages"
 import Button from "../components/button"
 
 export const metadata: Metadata = {
@@ -26,7 +25,6 @@ export default function Resume() {
             <Experience />
             <Education />
             <Stack />
-            <Languages />
         </article>
     )
 }

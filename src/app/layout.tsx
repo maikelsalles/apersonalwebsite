@@ -25,7 +25,7 @@ export default function RootLayout({
       <Head />
       <body className={webfont.className}>
         <Header/>
-        <main className={globals.wrapper}>
+        <main>
           {children}
         </main>
         <Footer/>

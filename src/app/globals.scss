@@ -1,7 +1,8 @@
 @import "./mixins";
 
 :root {
-  --black: 0, 0, 0;
+  --black: #1b1b1b;
+  --black-middle: #1e1e1e;
   --black-light: rgba(85, 88, 88, 1);
   --gray-dark: rgba(120, 128, 128, 1);
   --gray-light: rgba(222, 235, 235, 1);
@@ -10,7 +11,7 @@
   --primary-dark: rgba(0, 103, 151, 1);
   --primary-light: rgba(124, 214, 255, 1);
   --primary-regular: rgba(3, 156, 227, 1);
-  --white: 255, 255, 255;
+  --white: #f1f1f1;
   --warning: #FCAB0E;
   --sucess: #0EFC7B;
   --danger: #FC0E0E;
@@ -21,18 +22,22 @@
   --foreground-alpha-70: rgba(var(--black), 0.7);
 
   --shadow-large: .25rem .25rem 2rem var(--background-alpha-70);
-
   --max-width: 1100px;
   --border-radius-small: .5rem;
   --border-radius-large: 1rem;
   --foreground-rgb: rgba(var(--black),1);
   --background-rgb: rgba(var(--white),1);
+  --background-gradient: linear-gradient(
+    290deg,
+    var(--gray-light),
+    rgba(255, 255, 255, 0)
+  );
   --linear-gradient: linear-gradient(
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 1)
   );
 
-  --section-padding: 1.5rem 1.5rem;
+  --section-padding: 12vh;
   
   --font-size-1: 2em;
   --font-size-2: 1.75em;
@@ -41,6 +46,10 @@
   --font-size-5: 1em;
   --font-size-p: 1em;
   --font-size-6: .75em;
+
+  --header-height-lg: 132px;
+  --header-height-sm: 97px;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,11 +62,16 @@
     --foreground-alpha-10: rgba(var(--white), 0.1);
     --foreground-alpha-20: rgba(var(--white), 0.3);
     --foreground-alpha-70: rgba(var(--white), 0.7);
-
+    --background-gradient: linear-gradient(
+      290deg,
+      var(--black-middle),
+      rgba(0,0,0,0)
+      );
     --linear-gradient: linear-gradient(
       rgba(var(--black), 0),
       rgba(var(--black), 1)
     );
+    --shadow-large: .25rem .25rem 2rem var(--background-alpha-70);
   }
 }
 
@@ -77,7 +91,7 @@
     --font-size-p: .75em;
     --font-size-6: .5em;
 
-    --section-padding: 1rem 1rem;
+    --section-padding: 1rem;
   }
 }
 
@@ -94,7 +108,6 @@
     --font-size-p: 1em;
     --font-size-6: .75em;
 
-    --section-padding: 2rem 4rem;
   }
 }
 
@@ -109,14 +122,13 @@
 
 html{
   height: 100%;
-  overflow: auto;
+  overflow: unset;
   scroll-behavior: smooth;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {
@@ -160,7 +172,7 @@ h5 {
 p {
   padding: 0 0 2rem;
   font-size: var(--font-size-p);
-  line-height: 1.4em;
+  line-height: 1.6em;
   text-shadow: 1px 1px 0 var(--background-rgb);
 }
 a {
@@ -226,10 +238,14 @@ main {
     padding: 0.5em 1em;
   }
 }
+
 @include for-tablet-portrait-up {
   h1 {
     padding: 2rem 0 2rem 0;
     text-align: left;
+  }
+  h2 {
+    padding: 1rem 0 1rem 0;
   }
   main {
     text-align: left;

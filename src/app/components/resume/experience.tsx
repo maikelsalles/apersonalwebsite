@@ -3,16 +3,7 @@ export default function ExperienceComponent() {
     return (
         <section id="experience">
             <h2>Experience</h2>
-            <h3>Volunteer Product Designer</h3>
-            <small>
-                <span>Sanmyaku Entertainment - Calgary AB</span>
-                <time>November 2023 - June 2024</time>
-            </small>
-            <ul>
-                <li>Directed Product Design initiatives for an innovative Healthcare platform startup, collaborating with international teams, conducting presentations, implementing tests, and crafting a design system.</li>
-                <li>Defined scope and requirements for innovative solutions through strategic application of design thinking.</li>
-            </ul>
-            <h3>Product Designer - Design System</h3>
+            <h3>Design System Engineer</h3>
             <small>
                 <span>DBC Company - Consulting for Edenred - Porto Alegre/RS</span>
                 <time>July 2022 - Present</time>
@@ -23,7 +14,7 @@ export default function ExperienceComponent() {
                 <li>Served as a bridged between Design and Development allways fostering accessibility and best practices.</li>
                 <li>Led the efforts to uphold legacy designs by analyzing new brand standards alongside existing legacy code, ensuring seamless integration and consistency across platforms.</li>
             </ul>
-            <h3>Product Design</h3>
+            <h3>Head of Product Design</h3>
             <small>
                 <span>DBC Company - Consulting for Edenred - Porto Alegre/RS</span>
                 <time>October 2021 - July 2022</time>
