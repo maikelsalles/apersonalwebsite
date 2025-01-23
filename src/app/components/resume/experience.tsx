@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+import styles from "./resume.module.scss"
+
 export default function ExperienceComponent() {
     return (
-        <section id="experience">
-            <h2>Experience</h2>
+        <section className={styles.experienceItem} id="experience">
             <h3>Design System Engineer</h3>
             <small>
                 <span>DBC Company - Consulting for Edenred - Porto Alegre/RS</span>
-                <time>July 2022 - Present</time>
+                <time>July 2022 - November 2024</time>
             </small>
             <ul>
                 <li>Ahead of Design System project, lead the development in Figma and Angular Library of components, defining standards, guidelines and documentation within IT Engineers and Design department.</li>

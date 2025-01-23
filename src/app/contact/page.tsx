@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Metadata } from 'next';
 import styles from "./contact.module.scss"
+import globals from "../globals.module.scss"
 import Button from "@components/button"
 import ContactForm from '../components/forms/contact-form';
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
     return (
-        <div className={styles.contactContainer}>
+        <div className={`${styles.contactContainer} ${globals.wrapper} ${globals.coloredGradient} ${globals.sectionPadding}`}>
             <section>
                 <ContactForm />
             </section>

@@ -10,16 +10,6 @@
     * {
         position: relative;
     }
-    &:before {
-        width: 100vw;
-        height: 15vh;
-        z-index: 2;
-        left: 0;
-        bottom: 0;
-        position: fixed;
-        content: " ";
-        background: var(--linear-gradient);
-    }
     a {
         color: inherit;
         display: inline-block;

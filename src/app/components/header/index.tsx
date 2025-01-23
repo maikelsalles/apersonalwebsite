@@ -46,7 +46,7 @@ export default function Header() {
 
   return (    
     <header className={`${styles.header} ${globals.wrapper} ${!navActive ? "" : styles.collapsed} ${!blackout ? "" : styles.blackOut}`}>
-      <button id={styles.toggleNav} onClick={() => setNavActive(!navActive)} aria-label="Toggle Menu" className={`nav__menu-bar ${globals.wrapper}`}></button>
+      {/* <button id={styles.toggleNav} onClick={() => setNavActive(!navActive)} aria-label="Toggle Menu" className={`nav__menu-bar ${globals.wrapper}`}></button> */}
       <Link href="/" title="Home page" className={styles.brand}>
         <picture>
           <source srcSet={DarkLogo.src} media="(prefers-color-scheme: dark)" />
@@ -58,7 +58,7 @@ export default function Header() {
           />
         </picture>
       </Link>
-      <nav className={`${styles.nav}`}>
+      {/* <nav className={`${styles.nav}`}>
         { navlinks.map((link) => (
             <Link
               key={link.href}
@@ -74,7 +74,7 @@ export default function Header() {
         <Button customClass={['phone_only_flex']} type="link" href="https://www.linkedin.com/in/maikelsalles/" title="Follow me on LinkedIn" target="_blank" icon="linkedIn" label="LinkedIn"/>
         <Button customClass={['phone_only_flex']} type="link" href="https://medium.com/@MaikelSalles" title="View my academic articles on Medium" target="_blank" icon="medium" label="Medium"/>
         <Button customClass={['phone_only_flex']} type="link" href="calto:+5551996308777" title="Call me" icon="phone" label="+55 51 99630 8777"/>
-      </nav>
+      </nav> */}
     </header>
   )
 }

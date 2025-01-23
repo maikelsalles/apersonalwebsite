@@ -14,12 +14,6 @@ export const metadata: Metadata = {
 export default function Resume() {
     return (
         <article className={`${styles.resumeContainer} ${globals.wrapper}`}>
-            <nav className={styles.sideSlider}>
-                <a href="#experience" title="Experience" aria-label="Experience"></a>
-                <a href="#education" title="Education" aria-label="Education"></a>
-                <a href="#stack" title="Stack" aria-label="Stack"></a>
-                <a href="#languages" title="Languages" aria-label="Languages"></a>
-            </nav>
             <div className={styles.titleContainer}>
                 <h1>Resume</h1>
             </div>

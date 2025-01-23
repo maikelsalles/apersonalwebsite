@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import styles from "./resume.module.scss"
+
 export default function EducationComponent() {
     return (
         <section id="education">

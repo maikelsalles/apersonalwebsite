@@ -6,10 +6,6 @@
     flex: 0 70% 30%;
     align-items: center;
     flex-direction: column;
-    section {
-        @extend .filledBox;
-        padding: 2em;
-    }
     form {
         display: flex;
         width: 100%;
@@ -39,9 +35,6 @@
 @include for-tablet-landscape-up {
     .contactContainer {
         flex-direction: row;
-        section {
-            padding: 2rem 4rem;
-        }
     }
     .aside {
         width: 30%;

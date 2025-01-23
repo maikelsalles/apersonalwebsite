@@ -12,6 +12,9 @@ import img1 from "@img/portfolio/Design_System_Engineer.jpg";
 import img2 from "@img/portfolio/Head_of_Product_Design.jpg";
 import img3 from "@img/portfolio/Medical_Platform.jpg";
 import img4 from "@img/portfolio/Personal_Website.jpg";
+import Education from './components/resume/education'
+import Stack from './components/resume/stack'
+import AboutComponent from './components/about/about'
 
 export const metadata: Metadata = {
   title: 'Maikel Salles - UX UI Designer | UI Developer | Accessibility Specialist',
@@ -106,8 +109,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`${globals.wrapper} ${globals.sectionPadding}`}>
-        <Experience />
+      <section>
+        <AboutComponent />
+      </section>
+      <section className={`${globals.wrapper} ${globals.twoCollumns} ${globals.sectionPadding}`}>
+        <div className={`${globals.stickyIt}`}>
+          <h2>Experience</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse magni optio debitis hic mollitia, incidunt quas sit eius dolore quaerat laborum placeat odit! Voluptatem illo ea aspernatur et dolorum.</p>
+        </div>
+        <div className={globals.sectionPadding}>
+          <Experience />
+          <Education />
+          <Stack />
+        </div>
       </section>
     </>
   )

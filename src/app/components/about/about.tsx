@@ -1,16 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Metadata } from 'next'
 import styles from './about.module.scss'
-import globals from '../globals.module.scss'
+import globals from '../../globals.module.scss'
 import Image from 'next/image'
 import FotoH from '@img/maikel-salles-h.jpg'
 import FotoW from '@img/maikel-salles-w.jpg'
-export const metadata: Metadata = {
-  title: 'About Maikel Salles',
-  description: 'Read about my career and story.',
-}
 
-export default function About() {
+export default function AboutComponent() {
   return (
     <article className={`${styles.article} ${globals.wrapper} ${globals.sectionPadding} ${globals.twoCollumns} ${globals.waveGgradient}`}>
       <div className={`${styles.frontPic}`}>

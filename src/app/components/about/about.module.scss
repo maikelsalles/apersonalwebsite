@@ -1,7 +1,6 @@
-@import "../mixins";
+@import "../../mixins";
 
 .article {
-  margin: 2em 0;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
