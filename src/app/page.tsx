@@ -6,15 +6,17 @@ import styles from './home.module.scss'
 import globals from './globals.module.scss'
 import Image from 'next/image'
 import frontPage from '@img/maikel-salles.png'
-import Experience from './components/resume/experience'
+import Experience from '@components/resume/experience'
+import Spacer from '@components/spacer/spacer'
+import Education from '@components/resume/education'
+import Stack from '@components/resume/stack'
+import AboutComponent from '@components/about/about'
 
 import img1 from "@img/portfolio/Design_System_Engineer.jpg";
 import img2 from "@img/portfolio/Head_of_Product_Design.jpg";
 import img3 from "@img/portfolio/Medical_Platform.jpg";
 import img4 from "@img/portfolio/Personal_Website.jpg";
-import Education from './components/resume/education'
-import Stack from './components/resume/stack'
-import AboutComponent from './components/about/about'
+import Contact from './components/contact/page'
 
 export const metadata: Metadata = {
   title: 'Maikel Salles - UX UI Designer | UI Developer | Accessibility Specialist',
@@ -119,10 +121,29 @@ export default function Home() {
         </div>
         <div className={globals.sectionPadding}>
           <Experience />
-          <Education />
+        </div>
+      </section>
+      <Spacer />
+      <section className={`${globals.wrapper} ${globals.twoCollumns} ${globals.sectionPadding}`}>
+        <div className={`${globals.stickyIt}`}>
+          <h2>Stack</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse magni optio debitis hic mollitia, incidunt quas sit eius dolore quaerat laborum placeat odit! Voluptatem illo ea aspernatur et dolorum.</p>
+        </div>
+        <div className={globals.sectionPadding}>
           <Stack />
         </div>
       </section>
+      <Spacer />
+      <section className={`${globals.wrapper} ${globals.twoCollumns} ${globals.sectionPadding}`}>
+        <div className={`${globals.stickyIt}`}>
+          <h2>Education</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse magni optio debitis hic mollitia, incidunt quas sit eius dolore quaerat laborum placeat odit! Voluptatem illo ea aspernatur et dolorum.</p>
+        </div>
+        <div className={globals.sectionPadding}>
+          <Education />
+        </div>
+      </section>
+      <Contact />
     </>
   )
 }

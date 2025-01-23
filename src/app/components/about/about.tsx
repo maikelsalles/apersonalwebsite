@@ -8,7 +8,7 @@ import FotoW from '@img/maikel-salles-w.jpg'
 export default function AboutComponent() {
   return (
     <article className={`${styles.article} ${globals.wrapper} ${globals.sectionPadding} ${globals.twoCollumns} ${globals.waveGgradient}`}>
-      <div className={`${styles.frontPic}`}>
+      <div className={`${styles.frontPic} ${globals.stickyIt}`}>
         <picture>
           <source srcSet={FotoH.src} media="(min-width: 900px)" />
           <Image
@@ -20,7 +20,7 @@ export default function AboutComponent() {
         </picture>
       </div>
       <div className={`${styles.textContent} ${styles.imageContainer}`}>
-        <h1>About me</h1>
+        <h2>About me</h2>
         <blockquote>
           A skilled Designer and Developer with experience in the enterprise industry, I'm a Brazilian living in Calgary AB, since August 2023, and currently seeking new challenging opportunities in the Canadian tech industry.
         </blockquote>
