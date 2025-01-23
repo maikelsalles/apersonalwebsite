@@ -36,16 +36,29 @@
 }
 
 @include for-tablet-landscape-up {
+  .frontPic{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100vh;
+    img {
+      min-height: 100vh;
+      width: auto;
+    }
+  }
   .article {
-    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     flex-direction: row;
     overflow: visible;
     &:before {
       width: 80%;
     }
     .textContent {
-      padding: 2rem 4rem;
-      max-width: 50vw;
+      padding: 0;
+      width: 100%;
     }
     .imageContainer {
       margin: 4rem auto;

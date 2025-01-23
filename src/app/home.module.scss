@@ -56,12 +56,17 @@
       picture {
         display: block;
         img {
+          display: block;
           width: 100%;
           height: auto;
           filter: grayscale(100%) brightness(90%);
           transition: filter .5s;
           border-radius: var(--border-radius-small);
-          box-shadow: var(--shadow-large);
+          box-shadow: var(--shadow-small);
+          transition: .6s ease;
+          &:hover{
+            box-shadow: var(--shadow-large);
+          }
         }
       }
       h3 {

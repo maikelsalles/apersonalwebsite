@@ -107,10 +107,6 @@ export default function Home() {
         </div>
       </section>
       <section className={`${globals.wrapper} ${globals.sectionPadding}`}>
-        <h2>Resume</h2>
-        <p>
-          Experienced professional with over 10 years of experience, dedicated to crafting cohesive and inclusive digital experiences. Skilled in strategic visioning, cross-functional collaboration, and driving accessibility initiatives. Over 13 years of experience in enterprise software environments, ready to lead and elevate design teams for greater efficiency and impact.
-        </p>
         <Experience />
       </section>
     </>

@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import styles from "./resume.module.scss"
+import globals from "../globals.module.scss"
 import Experience from "@components/resume/experience"
 import Education from "@components/resume/education"
 import Stack from "@components/resume/stack"
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Resume() {
     return (
-        <article className={styles.resumeContainer}>
+        <article className={`${styles.resumeContainer} ${globals.wrapper}`}>
             <nav className={styles.sideSlider}>
                 <a href="#experience" title="Experience" aria-label="Experience"></a>
                 <a href="#education" title="Education" aria-label="Education"></a>

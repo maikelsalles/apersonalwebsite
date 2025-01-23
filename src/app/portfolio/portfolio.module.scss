@@ -9,7 +9,6 @@
             width: 100%;
         }
         @extend .filledBox;
-        padding: var(--section-padding);
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { Analytics } from "@vercel/analytics/react"
 import './globals.scss'
-import globals from './globals.module.scss'
 import { Montserrat } from 'next/font/google'
 import Header from '@/app/components/header'
 import Footer from './components/footer'

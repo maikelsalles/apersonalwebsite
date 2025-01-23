@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import styles from "./portfolio.module.scss"
+import globals from "../globals.module.scss"
 import Image from 'next/image'
 import Button from "../components/button"
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
     return (
-        <article className={styles.portfolioContainer}>
+        <article className={`${styles.portfolioContainer} ${globals.wrapper}`}>
             <div className={styles.titleContainer}>
                 <h1>Portfolio</h1>
             </div>
