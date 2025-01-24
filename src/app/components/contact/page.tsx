@@ -6,7 +6,7 @@ import ContactForm from '@components/forms/contact-form';
 
 export default function Contact() {
     return (
-        <div className={`${styles.contactContainer} ${globals.wrapper} ${globals.twoCollumnsReverse} ${globals.coloredGradient} ${globals.sectionPadding}`}>
+        <div className={`${styles.contactContainer} ${globals.wrapper} ${globals.twoCollumnsReverse} ${globals.sectionPadding}`}>
             <section>
                 <ContactForm />
             </section>
