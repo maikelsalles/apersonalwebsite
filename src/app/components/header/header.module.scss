@@ -7,6 +7,7 @@
     z-index: 2;
     &.blackOut {
         border-bottom: 1px solid var(--foreground-alpha-20);
+        background-color: var(--background-rgb);
     }
     &.whiteText:not(.blackOut) {
         nav a {
@@ -23,6 +24,7 @@
     justify-content: flex-start;
     border-bottom: 1px solid transparent;
     transition: padding .4s ease, border .1s ease;
+    backdrop-filter: blur(10px);
     &:before {
         content: " ";
         position: absolute;
@@ -201,9 +203,6 @@
 
 @media (prefers-color-scheme: light) {
     .header{
-        &.blackOut {
-            background-color: var(--background-rgb);
-        }
         &:before,
         &:after{
             display: none;
