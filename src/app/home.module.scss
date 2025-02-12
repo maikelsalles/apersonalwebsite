@@ -7,6 +7,7 @@
   gap: 0;
   position: relative;
   overflow: hidden;
+  height: auto;
 }
 .links_container {
   display: flex;
@@ -17,7 +18,9 @@
   }
 }
 .frontPic {
-  max-width: 50vw;
+  max-width: 80vw;
+  align-self: flex-end;
+  transform: translateX(var(--section-padding));
   &:before {
     position: absolute;
     width: 100vw;
@@ -25,7 +28,7 @@
     background: radial-gradient(var(--foreground-alpha-20), transparent, transparent);
     content: " ";
     right: -100%;
-    bottom: -100%;
+    top: 0%;
     z-index: -1;
   }
   img {
@@ -34,70 +37,27 @@
     display: block;
   }
 }
-.portfolioList{
-  padding-top: 0;
-  padding-bottom: var(--section-padding);
-  gap: var(--section-padding);
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  .portfolioItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    grid-column: auto / span 2;
-    a {
-      display: block;
-      position: relative;
-      width: 100%;
-      picture {
-        display: block;
-        img {
-          display: block;
-          width: 100%;
-          height: auto;
-          filter: grayscale(100%) brightness(90%);
-          transition: filter .5s;
-          border-radius: var(--border-radius-small);
-          box-shadow: var(--shadow-small);
-          transition: .6s ease;
-          &:hover{
-            box-shadow: var(--shadow-large);
-          }
-        }
-      }
-      h3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: var(--primary-regular);
-        color: var(--foreground-color);
-        padding: .5rem 1rem;
-        z-index: 1;
-      }
-      &:hover {
-        img {
-          filter: none;
-        }
-      }
-    }
-  }	
-}
 
 @include for-phone-only {
   .featuredSection {
     background-color: var(--background-alpha-70);
-    border-radius: var(--border-radius-small);
   }
 }
 
 @include for-tablet-portrait-up {
   .featuredSection {
-    height: calc(100vh - var(--header-height-lg));
+    min-height: 60vh;
     p {
       max-width: 50vw;
+    }
+    .frontPic {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-height: 100%;
+      max-height: 75vh;
+      max-width: 44vw;
+      transform: none;
     }
   }
   .links_container {
@@ -105,11 +65,6 @@
     gap: 1rem;
     a {
       margin-right: auto;
-    }
-  }
-  .portfolioList{
-    .portfolioItem {
-      grid-column: auto / span 1;
     }
   }
 }
@@ -126,13 +81,14 @@
       margin-right: 0;
     }
   }
+  .featuredSection {
+    height: 100vh;
+  }
   .frontPic {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     max-height: 100%;
     max-height: 75vh;
     max-width: 60vw;
+    transform: none;
   }
 }
 @media (prefers-color-scheme: light) {

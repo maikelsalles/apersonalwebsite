@@ -4,7 +4,6 @@ import globals from "../globals.module.scss"
 import Experience from "@components/resume/experience"
 import Education from "@components/resume/education"
 import Stack from "@components/resume/stack"
-import Button from "../components/button"
 
 export const metadata: Metadata = {
     title: "Resume - Maikel Salles",

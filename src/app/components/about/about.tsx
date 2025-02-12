@@ -10,7 +10,7 @@ export default function AboutComponent() {
     <article className={`${styles.article} ${globals.wrapper} ${globals.sectionPadding} ${globals.twoCollumns} ${globals.waveGgradient}`}>
       <div className={`${styles.frontPic} ${globals.stickyIt}`}>
         <picture>
-          <source srcSet={FotoH.src} media="(min-width: 900px)" />
+          <source srcSet={FotoH.src} media="(min-width: 600px)" />
           <Image
             src={FotoW}
             width={380}

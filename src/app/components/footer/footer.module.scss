@@ -3,15 +3,16 @@
 .footer {
     padding-bottom: 4rem;
     padding-top: 4rem;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
+    flex-direction: column;
     display: flex;
     text-align: left;
     gap: 4rem;
     overflow: hidden;
     position: relative;
     &:before{
-        background-image: url("../../../../public/img/maikel-salles-logo-dark.svg");
+        background-image: url("../../../../public/img/maikel-salles-logo-light.svg");
         background-size: cover;
         background-position: center right;
         content: " ";
@@ -64,12 +65,14 @@
 @include for-tablet-landscape-up {
     .footer {
         padding-bottom: 3rem;
+        flex-direction: row;
+        align-items: flex-end;
     }
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     .footer{
         &:before {
-            display: none;
+            background-image: url("../../../../public/img/maikel-salles-logo-dark.svg"); 
         }
     }
 }

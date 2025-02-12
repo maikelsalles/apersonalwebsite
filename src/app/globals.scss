@@ -12,7 +12,7 @@
   --primary-dark: rgba(0, 103, 151, 1);
   --primary-light: rgba(124, 214, 255, 1);
   --primary-regular: rgba(3, 156, 227, 1);
-  --white: 255, 255, 255;
+  --white: 242, 242, 242;
   --warning: #FCAB0E;
   --sucess: #0EFC7B;
   --danger: #FC0E0E;
@@ -95,7 +95,7 @@
     --font-size-p: .75em;
     --font-size-6: .5em;
 
-    --section-padding: 1rem;
+    --section-padding: 3rem;
   }
 }
 
@@ -184,6 +184,10 @@ p {
   line-height: 1.6em;
   text-shadow: 1px 1px 0 var(--background-rgb);
 }
+li{
+  font-size: var(--font-size-p);
+  line-height: 1.6em;
+}
 a {
   color: inherit;
   transition: .3s ease;
@@ -192,6 +196,7 @@ a {
 blockquote {
   font-weight: 500;
   border-left: 2px solid var(--primary-light);
+  font-size: var(--font-size-p);
   line-height: 1.4em;
   margin-bottom: 2rem;
   background: var(--background-alpha-20);

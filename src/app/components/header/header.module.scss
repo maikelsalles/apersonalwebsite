@@ -2,6 +2,17 @@
 @import "../../icons.module.scss";
 
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    &.blackOut {
+        border-bottom: 1px solid var(--foreground-alpha-20);
+    }
+    &.whiteText:not(.blackOut) {
+        nav a {
+            color: rgb(var(--white));
+        }
+    }
     display: flex;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -10,8 +21,6 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: flex-start;
-    position: relative;
-    z-index: 1;
     border-bottom: 1px solid transparent;
     transition: padding .4s ease, border .1s ease;
     &:before {
@@ -154,13 +163,7 @@
 
 
 @include for-phone-only {
-  .header {
-    position: fixed;
-    top: 0;
-    &.blackOut {
-        border-bottom: 1px solid var(--foreground-alpha-20);
-    }
-  }
+  
 }
 @include for-tablet-landscape-up {
     .header {

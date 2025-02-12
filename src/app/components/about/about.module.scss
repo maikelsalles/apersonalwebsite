@@ -2,7 +2,7 @@
 
 .article {
   .textContent {
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@
 .frontPic {
   img {
     width: 100%;
+    height: auto;
     display: block;
     box-shadow: var(--shadow-large);
     object-fit: cover;
@@ -22,10 +23,6 @@
 @include for-tablet-landscape-up {
   .frontPic{
     display: block;
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
   .article {
     .textContent {
