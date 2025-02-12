@@ -8,20 +8,18 @@ export default function Footer() {
           <h4>Articles</h4>
           <ul>
             <li>
-              <a href="" target="blank">Loyalty: Transmedia Strategies and Digital Marketing</a>
+              <a href="https://medium.com/@MaikelSalles/loyalty-transmedia-strategies-and-digital-marketing-7e652cdddabf" target="blank">Loyalty: Transmedia Strategies and Digital Marketing</a>
             </li>
             <li>
-              <a href="" target="blank">Telemedicine in remote guidance during the pandemic</a>
+              <a href="https://medium.com/@MaikelSalles/telemedicine-in-remote-guidance-during-the-pandemic-21d4a4fc677d" target="blank">Telemedicine in remote guidance during the pandemic</a>
             </li>
             <li>
-              <a href="" target="blank">Gamification as an engagement strategy</a>
+              <a href="https://medium.com/@MaikelSalles/gamification-as-an-engagement-strategy-cdaf952a6e9" target="blank">Gamification as an engagement strategy</a>
             </li>
             <li>
-              <a href="" target="blank">Playing with fear, to conquer security</a>
+              <a href="https://medium.com/@MaikelSalles/playing-with-fear-to-conquer-security-ebe796f4268e" target="blank">Playing with fear, to conquer security</a>
             </li>
-            <li>
-              <a href="" target="blank">When it comes to MVP: “Done is better than perfect”</a>
-            </li>
+            <li><a href="https://medium.com/@MaikelSalles" target="_blank">More...</a></li>
           </ul>
         </div>
         <small>
