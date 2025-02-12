@@ -7,7 +7,7 @@
     z-index: 2;
     &.blackOut {
         border-bottom: 1px solid var(--foreground-alpha-20);
-        background-color: var(--background-rgb);
+        background-color: var(--background-alpha-70);
     }
     &.whiteText:not(.blackOut) {
         nav a {
