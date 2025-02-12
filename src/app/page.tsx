@@ -18,7 +18,6 @@ import Portfolio from './portfolio/page'
 
 export const metadata: Metadata = {
   title: 'Maikel Salles - UX UI Designer | UI Developer | Accessibility Specialist',
-  title: 'Maikel Salles - UX UI Designer | UI Developer | Accessibility Specialist',
   description: 'Hello world! This is my personal website',
 }
 

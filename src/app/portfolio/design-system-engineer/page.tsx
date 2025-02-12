@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next"
+import React from 'react'
 
 import styles from "../portfolio.module.scss"
 import globals from "../../globals.module.scss"
@@ -21,10 +22,7 @@ export default function Resume() {
     return (
         <article className={`${globals.wrapper} ${globals.sectionPadding} ${styles.resumeContainer}`}>
             <div className={styles.titleContainer}>
-<<<<<<< HEAD:src/app/portfolio/design-system-engineer/page.tsx
                 <span className={styles.breadcrumbs}><a href="/portfolio" title="Back to Portfolio" rel="nofollow noindex">Portfolio</a></span>
-=======
->>>>>>> bdf7104d5749f65e5347b80f788fa70d0091f63c:src/app/portfolio/design-system/page.tsx
                 <h1>Design System</h1>
             </div>
             <section id="personal-website" className={styles.caseContainer}>
