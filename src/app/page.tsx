@@ -48,7 +48,6 @@ export default function Home() {
       <section id="resume" className={`${globals.wrapper} ${globals.twoCollumns} ${globals.sectionPadding}`}>
         <div className={`${globals.stickyIt}`}>
           <h2>Experience</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse magni optio debitis hic mollitia, incidunt quas sit eius dolore quaerat laborum placeat odit! Voluptatem illo ea aspernatur et dolorum.</p>
         </div>
         <div className={globals.sectionPadding}>
           <Experience />
@@ -58,7 +57,6 @@ export default function Home() {
       <section className={`${globals.wrapper} ${globals.twoCollumns} ${globals.sectionPadding}`}>
         <div className={`${globals.stickyIt}`}>
           <h2>Stack</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse magni optio debitis hic mollitia, incidunt quas sit eius dolore quaerat laborum placeat odit! Voluptatem illo ea aspernatur et dolorum.</p>
         </div>
         <div className={globals.sectionPadding}>
           <Stack />
@@ -68,7 +66,6 @@ export default function Home() {
       <section className={`${globals.wrapper} ${globals.twoCollumns} ${globals.sectionPadding}`}>
         <div className={`${globals.stickyIt}`}>
           <h2>Education</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse magni optio debitis hic mollitia, incidunt quas sit eius dolore quaerat laborum placeat odit! Voluptatem illo ea aspernatur et dolorum.</p>
         </div>
         <div className={globals.sectionPadding}>
           <Education />
